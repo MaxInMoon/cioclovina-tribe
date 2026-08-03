@@ -35,8 +35,8 @@
 ## Backlog
 
 - [ ] Faire valider la source de vérité regroupée dans la section « À valider plus tard ».
-- [ ] Définir l'architecture du site et le modèle de contenu multilingue à partir de l'audit validé.
 - [ ] Extraire, sélectionner et optimiser les photos du PDF dans `public/images/`.
+- [ ] Rédiger le contenu source roumain, puis adapter et vérifier les versions anglaise et française, métadonnées incluses.
 - [ ] Implémenter le site Next.js multilingue (RO/EN/FR) avec next-intl, Tailwind et shadcn/ui.
 - [ ] Ajouter les CTA de contact (WhatsApp, e-mail et Google Maps) avec les coordonnées validées.
 - [ ] Ajouter les métadonnées SEO localisées et les données structurées pertinentes.
@@ -46,3 +46,4 @@
 
 - [x] Auditer les 19 pages du PDF source par extraction de texte et revue visuelle : contenu, structure, 51 visuels uniques, incohérences, doublons et informations manquantes.
 - [x] Consolider les coordonnées confirmées, l'autorisation des photos et les hypothèses de travail réversibles.
+- [x] Définir et vérifier l'architecture, les parcours, le modèle de contenu multilingue, la stratégie SEO et l'organisation de fichiers dans `docs/site-blueprint.md`.
