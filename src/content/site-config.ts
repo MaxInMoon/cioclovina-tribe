@@ -1,0 +1,11 @@
+export const siteConfig = {
+  name: "Cioclovina Tribe",
+  phoneDisplay: "+40 723 635 785",
+  phoneInternational: "+40723635785",
+  whatsapp: "https://wa.me/40723635785",
+  email: "cioclovinatribe@gmail.com",
+  instagram: "https://www.instagram.com/cioclovinatribe",
+  maps: "https://maps.app.goo.gl/qw64mCHQsGQMbiPF8?g_st=iw",
+  minimumStayNights: 2,
+  advanceNoticeHours: 48,
+} as const;
