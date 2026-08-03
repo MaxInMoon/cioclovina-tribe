@@ -28,11 +28,7 @@ export type Accommodation = {
   gallery: readonly string[];
 };
 
-export type ExperienceId =
-  | "e-bike"
-  | "jeep-fundatura"
-  | "guided-hike"
-  | "jeep-dacian-fortresses";
+export type ExperienceId = "e-bike" | "jeep-fundatura" | "guided-hike" | "jeep-dacian-fortresses";
 
 export type Experience = {
   id: ExperienceId;

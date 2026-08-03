@@ -37,6 +37,16 @@ export const routing = defineRouting({
       fr: "/a-propos",
     },
     "/contact": "/contact",
+    "/privacy": {
+      ro: "/confidentialitate",
+      en: "/privacy",
+      fr: "/confidentialite",
+    },
+    "/legal": {
+      ro: "/mentiuni-legale",
+      en: "/legal",
+      fr: "/mentions-legales",
+    },
   },
 });
 

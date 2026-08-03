@@ -12,6 +12,12 @@ Run the development server:
 npm run dev
 ```
 
+Set the canonical public origin before a production build:
+
+```bash
+NEXT_PUBLIC_SITE_URL=https://your-domain.example npm run build
+```
+
 Useful checks:
 
 ```bash

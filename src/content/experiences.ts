@@ -1,6 +1,6 @@
 import type { Experience } from "./types";
 
-export const experiences = [
+export const experiences: readonly Experience[] = [
   {
     id: "e-bike",
     status: "provisional",
@@ -26,4 +26,4 @@ export const experiences = [
     minimumGuests: 2,
     price: { amount: 250, currency: "RON", unit: "person" },
   },
-] as const satisfies readonly Experience[];
+] as const;

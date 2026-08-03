@@ -2,7 +2,7 @@
 
 ## In Progress
 
-- [ ] Rédiger le contenu source roumain, puis adapter et vérifier les versions anglaise et française, métadonnées incluses.
+- [ ] Vérifier le responsive, l'accessibilité, les traductions et les parcours de navigation.
 
 ## Données validées
 
@@ -31,14 +31,12 @@
 - Les détails des repas, boissons et activités : horaires, volumes, restrictions, sécurité et disponibilité.
 - La confirmation de l'e-mail de contact et l'URL dédiée au dépôt d'un avis.
 - La validation finale des traductions et de la langue par défaut.
+- Le domaine public définitif à renseigner dans `NEXT_PUBLIC_SITE_URL`.
+- L'identité juridique de l'exploitant, ses informations d'enregistrement, l'hébergeur, les destinataires des données et les durées de conservation nécessaires aux pages légales.
 
 ## Backlog
 
 - [ ] Faire valider la source de vérité regroupée dans la section « À valider plus tard ».
-- [ ] Implémenter le site Next.js multilingue (RO/EN/FR) avec next-intl, Tailwind et shadcn/ui.
-- [ ] Ajouter les CTA de contact (WhatsApp, e-mail et Google Maps) avec les coordonnées validées.
-- [ ] Ajouter les métadonnées SEO localisées et les données structurées pertinentes.
-- [ ] Vérifier le responsive, l'accessibilité, les traductions et les parcours de navigation.
 
 ## Done
 
@@ -46,3 +44,9 @@
 - [x] Consolider les coordonnées confirmées, l'autorisation des photos et les hypothèses de travail réversibles.
 - [x] Définir et vérifier l'architecture, les parcours, le modèle de contenu multilingue, la stratégie SEO et l'organisation de fichiers dans `docs/site-blueprint.md`.
 - [x] Extraire, dédupliquer, nommer, classer et vérifier 49 photographies WebP optimisées dans `public/images/`, avec inventaire dans `docs/image-inventory.md`.
+- [x] Rédiger le contenu source roumain, puis adapter et vérifier les versions anglaise et française, métadonnées incluses.
+- [x] Implémenter les routes Next.js localisées RO/EN/FR, la navigation, le footer, l'accueil et les pages Hébergements, Expériences, Gastronomie, Préparer son séjour, À propos et Contact avec next-intl et Tailwind.
+- [x] Ajouter les CTA WhatsApp, e-mail, Google Maps et Instagram avec les coordonnées validées.
+- [x] Ajouter les métadonnées SEO localisées sur toutes les pages implémentées.
+- [x] Ajouter les données structurées `LodgingBusiness` et `BreadcrumbList`, le sitemap avec alternates RO/EN/FR et `robots.txt`.
+- [x] Ajouter les pages Confidentialité et Mentions légales dans les trois langues, avec les informations non confirmées explicitement signalées avant publication.

@@ -8,13 +8,7 @@ export const accommodations = [
     priceStatus: "provisional",
     pricing: [{ amount: 400, currency: "RON", unit: "night" }],
     bathroom: "private",
-    featureKeys: [
-      "doubleBed",
-      "panoramicVeranda",
-      "hammock",
-      "heating",
-      "electricity",
-    ],
+    featureKeys: ["doubleBed", "panoramicVeranda", "hammock", "heating", "electricity"],
     image: "/images/accommodations/hammock-cabin/bedroom-panoramic-view.webp",
     gallery: [
       "/images/accommodations/hammock-cabin/bedroom-panoramic-view.webp",
@@ -56,13 +50,7 @@ export const accommodations = [
       { guests: 4, amount: 400 },
     ],
     bathroom: "private",
-    featureKeys: [
-      "doubleBed",
-      "sofaBed",
-      "raisedPlatform",
-      "heating",
-      "electricity",
-    ],
+    featureKeys: ["doubleBed", "sofaBed", "raisedPlatform", "heating", "electricity"],
     image: "/images/accommodations/meadow-glamping/exterior.webp",
     gallery: [
       "/images/accommodations/meadow-glamping/exterior.webp",
@@ -77,13 +65,7 @@ export const accommodations = [
     priceStatus: "provisional",
     pricing: [{ amount: 250, currency: "RON", unit: "night" }],
     bathroom: "shared",
-    featureKeys: [
-      "doubleBed",
-      "childBed",
-      "panoramicWindows",
-      "heating",
-      "electricity",
-    ],
+    featureKeys: ["doubleBed", "childBed", "panoramicWindows", "heating", "electricity"],
     image: "/images/accommodations/star-tent/exterior-mountain-view.webp",
     gallery: [
       "/images/accommodations/star-tent/exterior-mountain-view.webp",
@@ -98,13 +80,7 @@ export const accommodations = [
     priceStatus: "provisional",
     pricing: [{ amount: 250, currency: "RON", unit: "night" }],
     bathroom: "shared",
-    featureKeys: [
-      "doubleBed",
-      "childBed",
-      "panoramicWindows",
-      "heating",
-      "electricity",
-    ],
+    featureKeys: ["doubleBed", "childBed", "panoramicWindows", "heating", "electricity"],
     image: "/images/accommodations/red-tent/exterior.webp",
     gallery: [
       "/images/accommodations/red-tent/exterior.webp",
@@ -119,13 +95,7 @@ export const accommodations = [
     priceStatus: "provisional",
     pricing: [{ amount: 180, currency: "RON", unit: "night" }],
     bathroom: "shared",
-    featureKeys: [
-      "smallDoubleBed",
-      "woodenPlatform",
-      "pergola",
-      "heating",
-      "electricity",
-    ],
+    featureKeys: ["smallDoubleBed", "woodenPlatform", "pergola", "heating", "electricity"],
     image: "/images/accommodations/a-tent/exterior.webp",
     gallery: [
       "/images/accommodations/a-tent/exterior.webp",
@@ -141,8 +111,7 @@ export const accommodations = [
     pricing: [{ amount: 50, currency: "RON", unit: "personNight" }],
     bathroom: "shared",
     featureKeys: ["pitchOnProperty", "sharedFacilities"],
-    image:
-      "/images/accommodations/own-tent-camping/tent-in-orchard.webp",
+    image: "/images/accommodations/own-tent-camping/tent-in-orchard.webp",
     gallery: [
       "/images/accommodations/own-tent-camping/tent-in-orchard.webp",
       "/images/accommodations/own-tent-camping/hammock.webp",

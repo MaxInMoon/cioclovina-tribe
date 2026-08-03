@@ -31,7 +31,9 @@
       "tagline": "Cazare în natură, gazde aproape și experiențe locale în Munții Șureanu.",
       "contact": "Contact",
       "explore": "Explorează",
-      "rights": "Toate drepturile rezervate."
+      "rights": "Toate drepturile rezervate.",
+      "privacy": "Confidențialitate",
+      "legal": "Mențiuni legale"
     },
     "whatsapp": {
       "general": "Bună! Aș dori să verific disponibilitatea la Cioclovina Tribe. Perioada: __. Adulți: __. Copii: __.",
@@ -51,10 +53,22 @@
       "imageAlt": "Vedere aeriană a proprietății Cioclovina Tribe, înconjurată de pădure și munți"
     },
     "highlights": {
-      "stays": { "title": "Cabane și corturi", "text": "Spații simple și primitoare, cu confortul esențial." },
-      "experiences": { "title": "Natură de explorat", "text": "Drumeții, ture cu bicicleta electrică și aventuri 4x4." },
-      "food": { "title": "Gusturi locale", "text": "Mâncare de casă, ingrediente din zonă și mese fără grabă." },
-      "arrival": { "title": "Primire personală", "text": "Ne întâlnim cu voi și vă însoțim pe ultimii kilometri cu mașina 4x4." }
+      "stays": {
+        "title": "Cabane și corturi",
+        "text": "Spații simple și primitoare, cu confortul esențial."
+      },
+      "experiences": {
+        "title": "Natură de explorat",
+        "text": "Drumeții, ture cu bicicleta electrică și aventuri 4x4."
+      },
+      "food": {
+        "title": "Gusturi locale",
+        "text": "Mâncare de casă, ingrediente din zonă și mese fără grabă."
+      },
+      "arrival": {
+        "title": "Primire personală",
+        "text": "Ne întâlnim cu voi și vă însoțim pe ultimii kilometri cu mașina 4x4."
+      }
     },
     "stays": {
       "eyebrow": "Unde dormi",
@@ -114,13 +128,41 @@
       "practical": "Bine de știut"
     },
     "items": {
-      "hammock-cabin": { "name": "Cabana cu hamac", "tagline": "Panoramă, verandă și un hamac numai bun pentru după-amiezi lente.", "description": "O cabană confortabilă cu pat matrimonial, baie privată și o verandă deschisă spre peisaj." },
-      "orchard-cabin": { "name": "Cabana din livadă", "tagline": "Confort liniștit printre pomi și detalii tradiționale.", "description": "Cabana îmbină mobilierul tradițional cu dotări practice, inclusiv baie privată, încălzire și aer condiționat." },
-      "meadow-glamping": { "name": "Cortul din poiană", "tagline": "Spațiu generos, platformă înălțată și baie privată.", "description": "Un cort amenajat pentru două până la patru persoane, cu pat matrimonial și canapea extensibilă." },
-      "star-tent": { "name": "Cortul sub stele", "tagline": "Ferestre panoramice pentru seri în care cerul rămâne aproape.", "description": "Cort amenajat cu pat matrimonial, pat pentru copil, încălzire și acces la baia comună." },
-      "red-tent": { "name": "Cortul roșu", "tagline": "Un refugiu cald, cu ferestre spre natură.", "description": "Numele final al acestui cort urmează să fie confirmat. Dotările indicate sunt pat matrimonial, pat pentru copil, încălzire, electricitate și baie comună." },
-      "a-tent": { "name": "Cortul A", "tagline": "Mic, simplu și așezat pe propria platformă din lemn.", "description": "Cort compact cu pat de 140 × 190 cm, pergolă, încălzire, electricitate și acces la baia comună." },
-      "own-tent-camping": { "name": "Cortul tău, în livadă", "tagline": "Vii cu cortul tău, noi îți oferim locul și accesul la facilitățile comune.", "description": "Loc pentru amplasarea cortului în cadrul proprietății, aproape de natură și de spațiile comune." }
+      "hammock-cabin": {
+        "name": "Cabana cu hamac",
+        "tagline": "Panoramă, verandă și un hamac numai bun pentru după-amiezi lente.",
+        "description": "O cabană confortabilă cu pat matrimonial, baie privată și o verandă deschisă spre peisaj."
+      },
+      "orchard-cabin": {
+        "name": "Cabana din livadă",
+        "tagline": "Confort liniștit printre pomi și detalii tradiționale.",
+        "description": "Cabana îmbină mobilierul tradițional cu dotări practice, inclusiv baie privată, încălzire și aer condiționat."
+      },
+      "meadow-glamping": {
+        "name": "Cortul din poiană",
+        "tagline": "Spațiu generos, platformă înălțată și baie privată.",
+        "description": "Un cort amenajat pentru două până la patru persoane, cu pat matrimonial și canapea extensibilă."
+      },
+      "star-tent": {
+        "name": "Cortul sub stele",
+        "tagline": "Ferestre panoramice pentru seri în care cerul rămâne aproape.",
+        "description": "Cort amenajat cu pat matrimonial, pat pentru copil, încălzire și acces la baia comună."
+      },
+      "red-tent": {
+        "name": "Cortul roșu",
+        "tagline": "Un refugiu cald, cu ferestre spre natură.",
+        "description": "Numele final al acestui cort urmează să fie confirmat. Dotările indicate sunt pat matrimonial, pat pentru copil, încălzire, electricitate și baie comună."
+      },
+      "a-tent": {
+        "name": "Cortul A",
+        "tagline": "Mic, simplu și așezat pe propria platformă din lemn.",
+        "description": "Cort compact cu pat de 140 × 190 cm, pergolă, încălzire, electricitate și acces la baia comună."
+      },
+      "own-tent-camping": {
+        "name": "Cortul tău, în livadă",
+        "tagline": "Vii cu cortul tău, noi îți oferim locul și accesul la facilitățile comune.",
+        "description": "Loc pentru amplasarea cortului în cadrul proprietății, aproape de natură și de spațiile comune."
+      }
     },
     "features": {
       "doubleBed": "Pat matrimonial",
@@ -143,7 +185,10 @@
     }
   },
   "experiences": {
-    "metadata": { "title": "Experiențe în natură | Cioclovina Tribe", "description": "Descoperă drumeții, ture cu bicicleta electrică, excursii 4x4 și activități în apropiere de Cioclovina." },
+    "metadata": {
+      "title": "Experiențe în natură | Cioclovina Tribe",
+      "description": "Descoperă drumeții, ture cu bicicleta electrică, excursii 4x4 și activități în apropiere de Cioclovina."
+    },
     "eyebrow": "Explorează Cioclovina",
     "title": "Zile care se măsoară în priveliști, nu în ore",
     "intro": "Unele experiențe pornesc chiar de aici, altele te duc mai departe prin păduri, sate și locuri cu istorie. Rezervă activitățile cu minimum 48 de ore înainte.",
@@ -154,14 +199,29 @@
     "nearbyText": "Canyoningul poate fi organizat la cerere prin furnizori locali. Traseul, nivelul, echipamentul, prețul și condițiile meteo trebuie confirmate înainte de rezervare.",
     "notice": "Durata, dificultatea, disponibilitatea și condițiile finale se confirmă cu gazda. Informațiile și tarifele din ghid sunt orientative.",
     "items": {
-      "e-bike": { "name": "Fundătura Ponorului cu bicicleta electrică", "description": "Traseu de dificultate medie, cu ghid local și bicicletă electrică incluse." },
-      "jeep-fundatura": { "name": "Fundătura Ponorului cu Jeep-ul", "description": "Aventură off-road organizată pentru minimum două persoane." },
-      "guided-hike": { "name": "Drumeție ghidată", "description": "Traseu prin pădurile și potecile muntelui." },
-      "jeep-dacian-fortresses": { "name": "Cetățile Dacice cu Jeep-ul", "description": "Vizită la Piatra Roșie, Cetățuia și Sarmizegetusa Regia, pentru minimum două persoane." }
+      "e-bike": {
+        "name": "Fundătura Ponorului cu bicicleta electrică",
+        "description": "Traseu de dificultate medie, cu ghid local și bicicletă electrică incluse."
+      },
+      "jeep-fundatura": {
+        "name": "Fundătura Ponorului cu Jeep-ul",
+        "description": "Aventură off-road organizată pentru minimum două persoane."
+      },
+      "guided-hike": {
+        "name": "Drumeție ghidată",
+        "description": "Traseu prin pădurile și potecile muntelui."
+      },
+      "jeep-dacian-fortresses": {
+        "name": "Cetățile Dacice cu Jeep-ul",
+        "description": "Vizită la Piatra Roșie, Cetățuia și Sarmizegetusa Regia, pentru minimum două persoane."
+      }
     }
   },
   "food": {
-    "metadata": { "title": "Gastronomie și mese de casă | Cioclovina Tribe", "description": "Descoperă mesele de casă, ingredientele locale, experiența privată și bucătăria comună de la Cioclovina Tribe." },
+    "metadata": {
+      "title": "Gastronomie și mese de casă | Cioclovina Tribe",
+      "description": "Descoperă mesele de casă, ingredientele locale, experiența privată și bucătăria comună de la Cioclovina Tribe."
+    },
     "eyebrow": "O experiență pentru toate simțurile",
     "title": "Mâncare făcută aici, cu gustul locului",
     "intro": "Gătim din ingrediente locale și de casă, inspirați de rețete tradiționale și de aromele regiunii.",
@@ -183,22 +243,48 @@
     "barText": "Sunt disponibile cafea, ceai, apă, băuturi răcoritoare, limonadă, bere, vin și băuturi tradiționale. Întreabă gazda pentru selecția și prețurile actuale."
   },
   "guide": {
-    "metadata": { "title": "Acces și informații practice | Cioclovina Tribe", "description": "Pregătește drumul spre Cioclovina Tribe: acces 4x4, ce să aduci, apă, Wi-Fi, mese, activități și reguli utile." },
+    "metadata": {
+      "title": "Acces și informații practice | Cioclovina Tribe",
+      "description": "Pregătește drumul spre Cioclovina Tribe: acces 4x4, ce să aduci, apă, Wi-Fi, mese, activități și reguli utile."
+    },
     "eyebrow": "Înainte să pornești",
     "title": "Tot ce îți trebuie pentru un sejur liniștit",
     "intro": "Locul este retras, iar ultima parte a drumului are nevoie de puțină coordonare. Scrie-ne înainte de sosire și te ghidăm pas cu pas.",
     "arrivalTitle": "Cum ajungi",
-    "arrivalSteps": ["Caută «Cioclovina Tribe» în Google Maps sau Waze.", "Când ajungi în Boșorod, trimite-ne un mesaj; îți confirmăm punctul de întâlnire.", "Din cei 13 km de la Boșorod, 8 km sunt pe drum neasfaltat.", "Ultimii 2 km se parcurg numai cu 4x4. Te întâmpinăm la mașina ta și te însoțim până la locație."],
+    "arrivalSteps": [
+      "Caută «Cioclovina Tribe» în Google Maps sau Waze.",
+      "Când ajungi în Boșorod, trimite-ne un mesaj; îți confirmăm punctul de întâlnire.",
+      "Din cei 13 km de la Boșorod, 8 km sunt pe drum neasfaltat.",
+      "Ultimii 2 km se parcurg numai cu 4x4. Te întâmpinăm la mașina ta și te însoțim până la locație."
+    ],
     "bringTitle": "Ce să ai la tine",
-    "bringItems": ["Încălțăminte comodă sau de drumeție", "Pelerină de ploaie", "Lanternă frontală sau lanternă", "Apă îmbuteliată pentru băut"],
+    "bringItems": [
+      "Încălțăminte comodă sau de drumeție",
+      "Pelerină de ploaie",
+      "Lanternă frontală sau lanternă",
+      "Apă îmbuteliată pentru băut"
+    ],
     "onsiteTitle": "Pe scurt, la fața locului",
-    "onsiteItems": ["Apa de la locație nu este potabilă; poți cumpăra și apă îmbuteliată de la gazde.", "Internetul Wi-Fi este disponibil.", "Semnalul mobil poate fi limitat, în funcție de rețea.", "Băile comune au apă caldă și produse de igienă de bază."],
+    "onsiteItems": [
+      "Apa de la locație nu este potabilă; poți cumpăra și apă îmbuteliată de la gazde.",
+      "Internetul Wi-Fi este disponibil.",
+      "Semnalul mobil poate fi limitat, în funcție de rețea.",
+      "Băile comune au apă caldă și produse de igienă de bază."
+    ],
     "rulesTitle": "Rezervări și costuri suplimentare",
-    "rulesItems": ["Sejur minim indicat: 2 nopți.", "Mesele și activitățile se rezervă cu minimum 48 de ore înainte.", "Câinii sunt bineveniți; ghidul indică o taxă de 50 RON pentru fiecare câine, per sejur.", "Transportul suplimentar, focul de tabără și accesul la bucătăria comună pot presupune costuri."],
+    "rulesItems": [
+      "Sejur minim indicat: 2 nopți.",
+      "Mesele și activitățile se rezervă cu minimum 48 de ore înainte.",
+      "Câinii sunt bineveniți; ghidul indică o taxă de 50 RON pentru fiecare câine, per sejur.",
+      "Transportul suplimentar, focul de tabără și accesul la bucătăria comună pot presupune costuri."
+    ],
     "notice": "Orele de check-in și check-out, plata, anularea și condițiile exacte pentru copii și animale se confirmă direct cu gazda."
   },
   "about": {
-    "metadata": { "title": "Roxana și Bogdan | Despre Cioclovina Tribe", "description": "Cunoaște-i pe Roxana și Bogdan și descoperă felul simplu, cald și apropiat în care primesc oaspeții la Cioclovina Tribe." },
+    "metadata": {
+      "title": "Roxana și Bogdan | Despre Cioclovina Tribe",
+      "description": "Cunoaște-i pe Roxana și Bogdan și descoperă felul simplu, cald și apropiat în care primesc oaspeții la Cioclovina Tribe."
+    },
     "eyebrow": "Gazdele voastre",
     "title": "Un loc făcut pentru liniște și întâlniri adevărate",
     "intro": "Suntem Roxana și Bogdan și ne bucurăm că ați ales să ne treceți pragul.",
@@ -208,7 +294,10 @@
     "imageAlt": "Roxana și Bogdan împreună cu familia, în natură"
   },
   "contact": {
-    "metadata": { "title": "Contact și disponibilitate | Cioclovina Tribe", "description": "Verifică disponibilitatea la Cioclovina Tribe prin WhatsApp sau e-mail și găsește locația pe Google Maps." },
+    "metadata": {
+      "title": "Contact și disponibilitate | Cioclovina Tribe",
+      "description": "Verifică disponibilitatea la Cioclovina Tribe prin WhatsApp sau e-mail și găsește locația pe Google Maps."
+    },
     "eyebrow": "Hai să vorbim",
     "title": "Verifică disponibilitatea sau pregătește-ți sosirea",
     "intro": "Cel mai simplu este să ne scrii pe WhatsApp. Include perioada, numărul de adulți și copii și cazarea care te interesează.",
@@ -220,5 +309,98 @@
     "mapsText": "Folosește locația ca reper, apoi scrie-ne din Boșorod pentru întâlnire și transferul 4x4.",
     "instagramTitle": "Instagram",
     "instagramText": "Vezi mai mult din atmosfera locului."
+  },
+  "privacy": {
+    "metadata": {
+      "title": "Politica de confidențialitate | Cioclovina Tribe",
+      "description": "Află cum sunt tratate datele personale atunci când vizitezi site-ul sau contactezi Cioclovina Tribe."
+    },
+    "eyebrow": "Transparență",
+    "title": "Politica de confidențialitate",
+    "intro": "Această pagină explică, în limbaj simplu, ce date pot fi prelucrate atunci când folosești site-ul și cum îți poți exercita drepturile.",
+    "statusNotice": "Versiune de lucru actualizată la 3 august 2026. Identitatea juridică a operatorului, furnizorul de găzduire și perioadele exacte de păstrare trebuie completate și verificate înainte de publicarea site-ului.",
+    "sections": [
+      {
+        "title": "Operator și contact",
+        "body": [
+          "Site-ul prezintă activitatea Cioclovina Tribe. Datele complete ale persoanei sau entității care acționează ca operator de date urmează să fie confirmate înainte de lansare.",
+          "Pentru întrebări despre confidențialitate sau pentru exercitarea drepturilor, adresa de contact provizorie este cioclovinatribe@gmail.com."
+        ]
+      },
+      {
+        "title": "Date prelucrate pe site",
+        "body": [
+          "Site-ul nu include conturi, formular de contact, plată online sau sistem propriu de rezervare. Nu solicită direct nume, adresă ori date de plată.",
+          "Serverul de găzduire poate genera jurnale tehnice care includ adresa IP, tipul browserului, data, ora și pagina solicitată, pentru funcționare și securitate. Furnizorul și perioada de păstrare vor fi precizate după alegerea găzduirii."
+        ]
+      },
+      {
+        "title": "Contact și servicii externe",
+        "body": [
+          "Butoanele pentru WhatsApp, e-mail, Instagram și Google Maps deschid servicii externe. Datele trimise prin aceste servicii sunt prelucrate și potrivit propriilor politici de confidențialitate.",
+          "Dacă alegi să contactezi gazdele, datele de contact și conținutul mesajului sunt folosite pentru a răspunde solicitării și, dacă este cazul, pentru pregătirea unei rezervări. Condițiile complete de păstrare și destinatarii trebuie confirmați înainte de lansare."
+        ]
+      },
+      {
+        "title": "Cookie-uri și analiză",
+        "body": [
+          "Versiunea actuală nu integrează publicitate, instrumente de analiză a audienței sau module sociale încorporate. Dacă vor fi adăugate tehnologii opționale, această politică și mecanismul de consimțământ vor fi actualizate înainte de activare."
+        ]
+      },
+      {
+        "title": "Drepturile tale",
+        "body": [
+          "În condițiile Regulamentului general privind protecția datelor, poți solicita informare, acces, rectificare, ștergere, restricționare, portabilitate sau te poți opune prelucrării, în funcție de situație.",
+          "De asemenea, poți depune o plângere la Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal, prin informațiile publicate la dataprotection.ro."
+        ]
+      }
+    ]
+  },
+  "legal": {
+    "metadata": {
+      "title": "Mențiuni legale | Cioclovina Tribe",
+      "description": "Informații despre editorul site-ului, conținut, tarife și servicii externe."
+    },
+    "eyebrow": "Informații despre site",
+    "title": "Mențiuni legale",
+    "intro": "Informațiile de mai jos descriu responsabilitățile editoriale și condițiile de utilizare ale site-ului Cioclovina Tribe.",
+    "statusNotice": "Document provizoriu actualizat la 3 august 2026. Numele juridic, forma de organizare, sediul, identificatorul fiscal, datele de înregistrare și furnizorul de găzduire trebuie completate înainte de publicare.",
+    "sections": [
+      {
+        "title": "Editorul site-ului",
+        "body": [
+          "Denumire comercială: Cioclovina Tribe. Identitatea juridică și datele obligatorii de identificare sunt în curs de confirmare.",
+          "Contact provizoriu: cioclovinatribe@gmail.com și +40 723 635 785."
+        ]
+      },
+      {
+        "title": "Găzduire și realizare",
+        "body": [
+          "Furnizorul de găzduire, adresa sa și datele de contact vor fi adăugate după alegerea mediului de producție.",
+          "Site-ul este realizat cu Next.js și nu include în prezent un formular, un cont de utilizator, o bază de date pentru clienți sau o funcție de plată online."
+        ]
+      },
+      {
+        "title": "Conținut și proprietate intelectuală",
+        "body": [
+          "Textele, identitatea vizuală și fotografiile publicate pe site nu pot fi reproduse sau reutilizate fără acordul titularilor drepturilor, cu excepția utilizărilor permise de lege.",
+          "Fotografiile folosite pe site provin din materialele Cioclovina Tribe și au fost autorizate pentru utilizare web."
+        ]
+      },
+      {
+        "title": "Tarife și rezervări",
+        "body": [
+          "Tarifele, dotările și condițiile prezentate sunt orientative cât timp nu au fost confirmate direct de gazde. Site-ul nu încheie rezervări și nu încasează plăți.",
+          "Disponibilitatea, prețul final și condițiile aplicabile sunt comunicate de gazde prin WhatsApp sau e-mail."
+        ]
+      },
+      {
+        "title": "Linkuri externe și răspundere",
+        "body": [
+          "Site-ul conține linkuri către WhatsApp, Google Maps, Instagram și servicii de e-mail. Cioclovina Tribe nu controlează disponibilitatea, conținutul sau politicile acestor servicii externe.",
+          "Informațiile practice sunt actualizate cu grijă, dar condițiile de acces, activitățile și serviciile pot varia. Confirmă informațiile importante cu gazdele înainte de deplasare."
+        ]
+      }
+    ]
   }
 }

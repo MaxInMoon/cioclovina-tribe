@@ -31,7 +31,9 @@
       "tagline": "Hébergements nature, hôtes attentionnés et expériences locales dans les monts Șureanu.",
       "contact": "Contact",
       "explore": "Explorer",
-      "rights": "Tous droits réservés."
+      "rights": "Tous droits réservés.",
+      "privacy": "Confidentialité",
+      "legal": "Mentions légales"
     },
     "whatsapp": {
       "general": "Bonjour ! Je souhaite vérifier les disponibilités à Cioclovina Tribe. Dates : __. Adultes : __. Enfants : __.",
@@ -51,10 +53,22 @@
       "imageAlt": "Vue aérienne du domaine Cioclovina Tribe entouré de forêts et de montagnes"
     },
     "highlights": {
-      "stays": { "title": "Cabanes et tentes", "text": "Des espaces simples et accueillants, avec le confort essentiel." },
-      "experiences": { "title": "La nature à explorer", "text": "Randonnées, sorties en vélo électrique et aventures en 4x4." },
-      "food": { "title": "Saveurs locales", "text": "Cuisine maison, produits de la région et repas sans hâte." },
-      "arrival": { "title": "Un accueil personnel", "text": "Nous venons à votre rencontre et parcourons avec vous les derniers kilomètres en 4x4." }
+      "stays": {
+        "title": "Cabanes et tentes",
+        "text": "Des espaces simples et accueillants, avec le confort essentiel."
+      },
+      "experiences": {
+        "title": "La nature à explorer",
+        "text": "Randonnées, sorties en vélo électrique et aventures en 4x4."
+      },
+      "food": {
+        "title": "Saveurs locales",
+        "text": "Cuisine maison, produits de la région et repas sans hâte."
+      },
+      "arrival": {
+        "title": "Un accueil personnel",
+        "text": "Nous venons à votre rencontre et parcourons avec vous les derniers kilomètres en 4x4."
+      }
     },
     "stays": {
       "eyebrow": "Où dormir",
@@ -114,13 +128,41 @@
       "practical": "Bon à savoir"
     },
     "items": {
-      "hammock-cabin": { "name": "Cabane au hamac", "tagline": "Un panorama, une véranda et un hamac pour laisser filer l'après-midi.", "description": "Une cabane confortable avec lit double, salle de bain privée et véranda ouverte sur le paysage." },
-      "orchard-cabin": { "name": "Cabane du verger", "tagline": "Un confort paisible parmi les arbres et des détails traditionnels.", "description": "Cette cabane associe mobilier traditionnel et équipements pratiques : salle de bain privée, chauffage et climatisation." },
-      "meadow-glamping": { "name": "Tente glamping de la clairière", "tagline": "Un bel espace, une plateforme surélevée et une salle de bain privée.", "description": "Une tente aménagée pour deux à quatre personnes, avec lit double et canapé-lit." },
-      "star-tent": { "name": "Tente sous les étoiles", "tagline": "Des fenêtres panoramiques pour garder le ciel tout près.", "description": "Une tente aménagée avec lit double, lit enfant, chauffage et accès aux sanitaires communs." },
-      "red-tent": { "name": "Tente rouge", "tagline": "Un refuge chaleureux dont les fenêtres s'ouvrent sur la nature.", "description": "Le nom définitif de cette tente reste à confirmer. Les équipements indiqués sont un lit double, un lit enfant, le chauffage, l'électricité et l'accès aux sanitaires communs." },
-      "a-tent": { "name": "Tente A", "tagline": "Petite, simple et installée sur sa propre plateforme en bois.", "description": "Une tente compacte avec lit de 140 × 190 cm, pergola, chauffage, électricité et accès aux sanitaires communs." },
-      "own-tent-camping": { "name": "Votre tente dans le verger", "tagline": "Venez avec votre tente ; nous fournissons le cadre et l'accès aux équipements communs.", "description": "Un emplacement sur la propriété, tout près de la nature et des espaces partagés." }
+      "hammock-cabin": {
+        "name": "Cabane au hamac",
+        "tagline": "Un panorama, une véranda et un hamac pour laisser filer l'après-midi.",
+        "description": "Une cabane confortable avec lit double, salle de bain privée et véranda ouverte sur le paysage."
+      },
+      "orchard-cabin": {
+        "name": "Cabane du verger",
+        "tagline": "Un confort paisible parmi les arbres et des détails traditionnels.",
+        "description": "Cette cabane associe mobilier traditionnel et équipements pratiques : salle de bain privée, chauffage et climatisation."
+      },
+      "meadow-glamping": {
+        "name": "Tente glamping de la clairière",
+        "tagline": "Un bel espace, une plateforme surélevée et une salle de bain privée.",
+        "description": "Une tente aménagée pour deux à quatre personnes, avec lit double et canapé-lit."
+      },
+      "star-tent": {
+        "name": "Tente sous les étoiles",
+        "tagline": "Des fenêtres panoramiques pour garder le ciel tout près.",
+        "description": "Une tente aménagée avec lit double, lit enfant, chauffage et accès aux sanitaires communs."
+      },
+      "red-tent": {
+        "name": "Tente rouge",
+        "tagline": "Un refuge chaleureux dont les fenêtres s'ouvrent sur la nature.",
+        "description": "Le nom définitif de cette tente reste à confirmer. Les équipements indiqués sont un lit double, un lit enfant, le chauffage, l'électricité et l'accès aux sanitaires communs."
+      },
+      "a-tent": {
+        "name": "Tente A",
+        "tagline": "Petite, simple et installée sur sa propre plateforme en bois.",
+        "description": "Une tente compacte avec lit de 140 × 190 cm, pergola, chauffage, électricité et accès aux sanitaires communs."
+      },
+      "own-tent-camping": {
+        "name": "Votre tente dans le verger",
+        "tagline": "Venez avec votre tente ; nous fournissons le cadre et l'accès aux équipements communs.",
+        "description": "Un emplacement sur la propriété, tout près de la nature et des espaces partagés."
+      }
     },
     "features": {
       "doubleBed": "Lit double",
@@ -143,7 +185,10 @@
     }
   },
   "experiences": {
-    "metadata": { "title": "Expériences en pleine nature | Cioclovina Tribe", "description": "Découvrez les randonnées, sorties en vélo électrique, excursions en 4x4 et activités autour de Cioclovina." },
+    "metadata": {
+      "title": "Expériences en pleine nature | Cioclovina Tribe",
+      "description": "Découvrez les randonnées, sorties en vélo électrique, excursions en 4x4 et activités autour de Cioclovina."
+    },
     "eyebrow": "Explorer Cioclovina",
     "title": "Des journées qui se mesurent en paysages, pas en heures",
     "intro": "Certaines expériences commencent ici, d'autres vous entraînent plus loin à travers forêts, villages et sites historiques. Réservez les activités au moins 48 heures à l'avance.",
@@ -154,14 +199,29 @@
     "nearbyText": "Le canyoning peut être organisé sur demande avec des prestataires locaux. Parcours, niveau, équipement, prix et météo doivent être confirmés avant la réservation.",
     "notice": "Durée, difficulté, disponibilité et conditions finales sont à confirmer avec les hôtes. Les informations et tarifs du guide sont indicatifs.",
     "items": {
-      "e-bike": { "name": "Fundătura Ponorului en vélo électrique", "description": "Un parcours de difficulté moyenne avec guide local et vélo électrique inclus." },
-      "jeep-fundatura": { "name": "Fundătura Ponorului en Jeep", "description": "Une aventure tout-terrain organisée à partir de deux participants." },
-      "guided-hike": { "name": "Randonnée guidée", "description": "Un itinéraire à travers les forêts et les sentiers de montagne." },
-      "jeep-dacian-fortresses": { "name": "Forteresses daces en Jeep", "description": "Visite de Piatra Roșie, Cetățuia et Sarmizegetusa Regia, à partir de deux participants." }
+      "e-bike": {
+        "name": "Fundătura Ponorului en vélo électrique",
+        "description": "Un parcours de difficulté moyenne avec guide local et vélo électrique inclus."
+      },
+      "jeep-fundatura": {
+        "name": "Fundătura Ponorului en Jeep",
+        "description": "Une aventure tout-terrain organisée à partir de deux participants."
+      },
+      "guided-hike": {
+        "name": "Randonnée guidée",
+        "description": "Un itinéraire à travers les forêts et les sentiers de montagne."
+      },
+      "jeep-dacian-fortresses": {
+        "name": "Forteresses daces en Jeep",
+        "description": "Visite de Piatra Roșie, Cetățuia et Sarmizegetusa Regia, à partir de deux participants."
+      }
     }
   },
   "food": {
-    "metadata": { "title": "Cuisine locale et repas maison | Cioclovina Tribe", "description": "Découvrez les repas maison, les ingrédients locaux, l'expérience privée et la cuisine commune de Cioclovina Tribe." },
+    "metadata": {
+      "title": "Cuisine locale et repas maison | Cioclovina Tribe",
+      "description": "Découvrez les repas maison, les ingrédients locaux, l'expérience privée et la cuisine commune de Cioclovina Tribe."
+    },
     "eyebrow": "Une expérience pour tous les sens",
     "title": "Une cuisine préparée ici, aux saveurs de la région",
     "intro": "Nous cuisinons des produits locaux et faits maison, inspirés des recettes traditionnelles et des saveurs de la région.",
@@ -183,22 +243,48 @@
     "barText": "Café, thé, eau, sodas, limonade, bière, vin et alcools traditionnels peuvent être proposés. Demandez aux hôtes la sélection et les tarifs du moment."
   },
   "guide": {
-    "metadata": { "title": "Accès et informations pratiques | Cioclovina Tribe", "description": "Préparez votre trajet vers Cioclovina Tribe : accès en 4x4, affaires à emporter, eau, Wi-Fi, repas, activités et règles utiles." },
+    "metadata": {
+      "title": "Accès et informations pratiques | Cioclovina Tribe",
+      "description": "Préparez votre trajet vers Cioclovina Tribe : accès en 4x4, affaires à emporter, eau, Wi-Fi, repas, activités et règles utiles."
+    },
     "eyebrow": "Avant de partir",
     "title": "Tout ce qu'il faut pour un séjour serein",
     "intro": "Le lieu est isolé et la dernière partie du trajet demande un peu de coordination. Écrivez-nous avant l'arrivée : nous vous guiderons étape par étape.",
     "arrivalTitle": "Comment venir",
-    "arrivalSteps": ["Recherchez « Cioclovina Tribe » dans Google Maps ou Waze.", "À votre arrivée à Boșorod, envoyez-nous un message ; nous confirmerons le point de rendez-vous.", "Sur les 13 km depuis Boșorod, 8 km se font sur une route non asphaltée.", "Les 2 derniers kilomètres ne sont accessibles qu'en 4x4. Nous vous retrouvons à votre voiture et vous accompagnons jusqu'au domaine."],
+    "arrivalSteps": [
+      "Recherchez « Cioclovina Tribe » dans Google Maps ou Waze.",
+      "À votre arrivée à Boșorod, envoyez-nous un message ; nous confirmerons le point de rendez-vous.",
+      "Sur les 13 km depuis Boșorod, 8 km se font sur une route non asphaltée.",
+      "Les 2 derniers kilomètres ne sont accessibles qu'en 4x4. Nous vous retrouvons à votre voiture et vous accompagnons jusqu'au domaine."
+    ],
     "bringTitle": "À emporter",
-    "bringItems": ["Chaussures confortables ou de randonnée", "Vêtement de pluie", "Lampe frontale ou lampe de poche", "Eau potable en bouteille"],
+    "bringItems": [
+      "Chaussures confortables ou de randonnée",
+      "Vêtement de pluie",
+      "Lampe frontale ou lampe de poche",
+      "Eau potable en bouteille"
+    ],
     "onsiteTitle": "Sur place, en bref",
-    "onsiteItems": ["L'eau du domaine n'est pas potable ; vous pouvez aussi acheter de l'eau en bouteille auprès des hôtes.", "Une connexion Wi-Fi est disponible.", "Le réseau mobile peut être limité selon l'opérateur.", "Les sanitaires communs disposent d'eau chaude et de produits d'hygiène essentiels."],
+    "onsiteItems": [
+      "L'eau du domaine n'est pas potable ; vous pouvez aussi acheter de l'eau en bouteille auprès des hôtes.",
+      "Une connexion Wi-Fi est disponible.",
+      "Le réseau mobile peut être limité selon l'opérateur.",
+      "Les sanitaires communs disposent d'eau chaude et de produits d'hygiène essentiels."
+    ],
     "rulesTitle": "Réservations et frais supplémentaires",
-    "rulesItems": ["Séjour minimum indiqué dans le guide : 2 nuits.", "Repas et activités doivent être réservés au moins 48 heures à l'avance.", "Les chiens sont les bienvenus ; le guide indique 50 RON par chien et par séjour.", "Le transport supplémentaire, le feu de camp et l'accès à la cuisine commune peuvent entraîner des frais."],
+    "rulesItems": [
+      "Séjour minimum indiqué dans le guide : 2 nuits.",
+      "Repas et activités doivent être réservés au moins 48 heures à l'avance.",
+      "Les chiens sont les bienvenus ; le guide indique 50 RON par chien et par séjour.",
+      "Le transport supplémentaire, le feu de camp et l'accès à la cuisine commune peuvent entraîner des frais."
+    ],
     "notice": "Horaires d'arrivée et de départ, paiements, annulations et conditions exactes pour les enfants et animaux doivent être confirmés directement avec les hôtes."
   },
   "about": {
-    "metadata": { "title": "Roxana et Bogdan | À propos de Cioclovina Tribe", "description": "Rencontrez Roxana et Bogdan et découvrez leur manière simple, chaleureuse et personnelle d'accueillir les voyageurs à Cioclovina Tribe." },
+    "metadata": {
+      "title": "Roxana et Bogdan | À propos de Cioclovina Tribe",
+      "description": "Rencontrez Roxana et Bogdan et découvrez leur manière simple, chaleureuse et personnelle d'accueillir les voyageurs à Cioclovina Tribe."
+    },
     "eyebrow": "Vos hôtes",
     "title": "Un lieu pensé pour le calme et les vraies rencontres",
     "intro": "Nous sommes Roxana et Bogdan, et nous sommes heureux de vous accueillir chez nous.",
@@ -208,7 +294,10 @@
     "imageAlt": "Roxana et Bogdan avec leur famille dans la nature"
   },
   "contact": {
-    "metadata": { "title": "Contact et disponibilités | Cioclovina Tribe", "description": "Vérifiez les disponibilités de Cioclovina Tribe par WhatsApp ou e-mail et retrouvez le lieu dans Google Maps." },
+    "metadata": {
+      "title": "Contact et disponibilités | Cioclovina Tribe",
+      "description": "Vérifiez les disponibilités de Cioclovina Tribe par WhatsApp ou e-mail et retrouvez le lieu dans Google Maps."
+    },
     "eyebrow": "Parlons de votre séjour",
     "title": "Vérifiez une disponibilité ou préparez votre arrivée",
     "intro": "Le plus simple est de nous écrire sur WhatsApp. Indiquez vos dates, le nombre d'adultes et d'enfants et l'hébergement qui vous intéresse.",
@@ -220,5 +309,98 @@
     "mapsText": "Utilisez le lieu comme repère, puis écrivez-nous depuis Boșorod pour organiser le rendez-vous et le transfert en 4x4.",
     "instagramTitle": "Instagram",
     "instagramText": "Découvrez davantage l'atmosphère du lieu."
+  },
+  "privacy": {
+    "metadata": {
+      "title": "Politique de confidentialité | Cioclovina Tribe",
+      "description": "Découvrez comment les données personnelles sont traitées lorsque vous visitez le site ou contactez Cioclovina Tribe."
+    },
+    "eyebrow": "Transparence",
+    "title": "Politique de confidentialité",
+    "intro": "Cette page explique simplement quelles données peuvent être traitées lorsque vous utilisez le site et comment exercer vos droits.",
+    "statusNotice": "Version de travail mise à jour le 3 août 2026. L'identité juridique du responsable du traitement, l'hébergeur et les durées exactes de conservation doivent être complétés et vérifiés avant la publication du site.",
+    "sections": [
+      {
+        "title": "Responsable du traitement et contact",
+        "body": [
+          "Ce site présente les activités de Cioclovina Tribe. Les coordonnées complètes de la personne ou de l'entité responsable du traitement doivent être confirmées avant la mise en ligne.",
+          "Pour toute question relative à la confidentialité ou pour exercer vos droits, l'adresse de contact provisoire est cioclovinatribe@gmail.com."
+        ]
+      },
+      {
+        "title": "Données traitées sur le site",
+        "body": [
+          "Le site ne comporte ni compte utilisateur, ni formulaire de contact, ni paiement en ligne, ni système de réservation propre. Il ne demande pas directement de nom, d'adresse ou de coordonnées bancaires.",
+          "Le serveur d'hébergement peut produire des journaux techniques comprenant l'adresse IP, le type de navigateur, la date, l'heure et la page demandée, à des fins de fonctionnement et de sécurité. Le prestataire et la durée de conservation seront précisés après le choix de l'hébergement."
+        ]
+      },
+      {
+        "title": "Contact et services externes",
+        "body": [
+          "Les boutons WhatsApp, e-mail, Instagram et Google Maps ouvrent des services externes. Les données envoyées par leur intermédiaire sont également traitées selon leurs propres politiques de confidentialité.",
+          "Si vous contactez les hôtes, vos coordonnées et votre message servent à répondre à votre demande et, le cas échéant, à préparer une réservation. Les durées de conservation et destinataires doivent être confirmés avant la mise en ligne."
+        ]
+      },
+      {
+        "title": "Cookies et mesure d'audience",
+        "body": [
+          "La version actuelle n'intègre ni publicité, ni mesure d'audience, ni module social embarqué. Si des technologies optionnelles sont ajoutées, cette politique et le mécanisme de consentement seront mis à jour avant leur activation."
+        ]
+      },
+      {
+        "title": "Vos droits",
+        "body": [
+          "Dans les conditions prévues par le Règlement général sur la protection des données, vous pouvez demander information, accès, rectification, effacement, limitation ou portabilité, ou vous opposer au traitement selon la situation.",
+          "Vous pouvez également déposer une réclamation auprès de l'autorité roumaine de contrôle des données personnelles en utilisant les informations publiées sur dataprotection.ro."
+        ]
+      }
+    ]
+  },
+  "legal": {
+    "metadata": {
+      "title": "Mentions légales | Cioclovina Tribe",
+      "description": "Informations sur l'éditeur du site, les contenus, les tarifs indicatifs et les services externes."
+    },
+    "eyebrow": "Informations sur le site",
+    "title": "Mentions légales",
+    "intro": "Les informations ci-dessous décrivent les responsabilités éditoriales et les conditions d'utilisation du site Cioclovina Tribe.",
+    "statusNotice": "Document provisoire mis à jour le 3 août 2026. Le nom juridique, la forme d'exploitation, l'adresse du siège, l'identifiant fiscal, les informations d'enregistrement et l'hébergeur doivent être complétés avant publication.",
+    "sections": [
+      {
+        "title": "Éditeur du site",
+        "body": [
+          "Nom commercial : Cioclovina Tribe. L'identité juridique et les informations obligatoires d'enregistrement restent à confirmer.",
+          "Contact provisoire : cioclovinatribe@gmail.com et +40 723 635 785."
+        ]
+      },
+      {
+        "title": "Hébergement et réalisation",
+        "body": [
+          "Le prestataire d'hébergement, son adresse et ses coordonnées seront ajoutés après le choix de l'environnement de production.",
+          "Le site est réalisé avec Next.js et ne comporte actuellement ni formulaire, ni compte utilisateur, ni base clients, ni fonction de paiement en ligne."
+        ]
+      },
+      {
+        "title": "Contenus et propriété intellectuelle",
+        "body": [
+          "Les textes, l'identité visuelle et les photographies publiés sur ce site ne peuvent être reproduits ou réutilisés sans l'accord des titulaires concernés, sauf dans les cas autorisés par la loi.",
+          "Les photographies utilisées proviennent des supports de Cioclovina Tribe et leur utilisation sur le Web a été autorisée."
+        ]
+      },
+      {
+        "title": "Tarifs et réservations",
+        "body": [
+          "Les tarifs, équipements et conditions présentés restent indicatifs tant qu'ils n'ont pas été confirmés directement par les hôtes. Le site ne conclut aucune réservation et n'encaisse aucun paiement.",
+          "Les disponibilités, le prix final et les conditions applicables sont communiqués par les hôtes sur WhatsApp ou par e-mail."
+        ]
+      },
+      {
+        "title": "Liens externes et responsabilité",
+        "body": [
+          "Le site contient des liens vers WhatsApp, Google Maps, Instagram et des services de messagerie. Cioclovina Tribe ne contrôle pas la disponibilité, les contenus ou les politiques de ces services externes.",
+          "Les informations pratiques sont tenues à jour avec soin, mais les conditions d'accès, activités et services peuvent varier. Confirmez les informations importantes avec les hôtes avant votre déplacement."
+        ]
+      }
+    ]
   }
 }

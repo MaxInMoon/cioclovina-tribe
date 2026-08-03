@@ -9,3 +9,8 @@ export const siteConfig = {
   minimumStayNights: 2,
   advanceNoticeHours: 48,
 } as const;
+
+export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").replace(
+  /\/$/,
+  "",
+);
