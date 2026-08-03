@@ -3,6 +3,15 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
+import "@fontsource/inter/latin-400.css";
+import "@fontsource/inter/latin-400-italic.css";
+import "@fontsource/inter/latin-700.css";
+import "@fontsource/inter/latin-700-italic.css";
+import "@fontsource/inter/latin-ext-400.css";
+import "@fontsource/inter/latin-ext-400-italic.css";
+import "@fontsource/inter/latin-ext-700.css";
+import "@fontsource/inter/latin-ext-700-italic.css";
+
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { siteUrl } from "@/content/site-config";
@@ -35,7 +44,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body>
+      <body className="font-sans">
         <NextIntlClientProvider>
           <a
             className="fixed top-3 left-3 z-[100] -translate-y-20 rounded-full bg-cream px-5 py-3 font-semibold text-forest shadow-lg transition-transform focus:translate-y-0"

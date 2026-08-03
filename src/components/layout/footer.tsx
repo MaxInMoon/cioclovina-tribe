@@ -8,7 +8,7 @@ export async function Footer() {
 
   return (
     <footer className="bg-charcoal text-cream">
-      <div className="site-container grid gap-10 py-14 md:grid-cols-[1.4fr_1fr_1fr]">
+      <div className="site-container grid gap-12 py-16 md:grid-cols-[1.4fr_1fr_1fr] md:py-20">
         <div>
           <Link className="font-serif text-2xl font-semibold" href="/">
             {siteConfig.name}
@@ -19,17 +19,23 @@ export async function Footer() {
           <p className="text-xs font-bold tracking-[0.16em] text-cream/50 uppercase">
             {t("footer.explore")}
           </p>
-          <div className="mt-4 flex flex-col gap-3 text-sm">
-            <Link className="py-1" href="/stays">
+          <div className="mt-5 flex flex-col gap-2 text-sm">
+            <Link className="w-fit py-2 transition-colors hover:text-moss-light" href="/stays">
               {t("nav.stays")}
             </Link>
-            <Link className="py-1" href="/experiences">
+            <Link
+              className="w-fit py-2 transition-colors hover:text-moss-light"
+              href="/experiences"
+            >
               {t("nav.experiences")}
             </Link>
-            <Link className="py-1" href="/food">
+            <Link className="w-fit py-2 transition-colors hover:text-moss-light" href="/food">
               {t("nav.food")}
             </Link>
-            <Link className="py-1" href="/plan-your-stay">
+            <Link
+              className="w-fit py-2 transition-colors hover:text-moss-light"
+              href="/plan-your-stay"
+            >
               {t("nav.guide")}
             </Link>
           </div>
@@ -38,23 +44,39 @@ export async function Footer() {
           <p className="text-xs font-bold tracking-[0.16em] text-cream/50 uppercase">
             {t("footer.contact")}
           </p>
-          <div className="mt-4 flex flex-col gap-3 text-sm">
-            <a className="py-1" href={siteConfig.whatsapp}>
+          <div className="mt-5 flex flex-col gap-2 text-sm">
+            <a
+              className="w-fit py-2 transition-colors hover:text-moss-light"
+              href={siteConfig.whatsapp}
+            >
               {siteConfig.phoneDisplay}
             </a>
-            <a className="py-1" href={siteConfig.booking} target="_blank" rel="noreferrer">
+            <a
+              className="w-fit py-2 transition-colors hover:text-moss-light"
+              href={siteConfig.booking}
+              target="_blank"
+              rel="noreferrer"
+            >
               Booking.com
             </a>
-            <a className="py-1" href={`mailto:${siteConfig.email}`}>
+            <a
+              className="w-fit py-2 transition-colors hover:text-moss-light"
+              href={`mailto:${siteConfig.email}`}
+            >
               {siteConfig.email}
             </a>
-            <a className="py-1" href={siteConfig.instagram} target="_blank" rel="noreferrer">
+            <a
+              className="w-fit py-2 transition-colors hover:text-moss-light"
+              href={siteConfig.instagram}
+              target="_blank"
+              rel="noreferrer"
+            >
               Instagram
             </a>
           </div>
         </div>
       </div>
-      <div className="site-container flex flex-col gap-3 border-t border-cream/10 py-5 text-xs text-cream/50 sm:flex-row sm:items-center sm:justify-between">
+      <div className="site-container flex flex-col gap-4 border-t border-cream/10 py-7 text-xs text-cream/60 sm:flex-row sm:items-center sm:justify-between">
         <p>
           © {new Date().getFullYear()} {siteConfig.name}. {t("footer.rights")}
         </p>

@@ -160,7 +160,7 @@ export default async function StayDetailPage({ params }: PageProps) {
               </li>
             </ul>
           </div>
-          <aside className="h-fit rounded-2xl bg-sand p-8 lg:sticky lg:top-8">
+          <aside className="h-fit rounded-3xl border border-forest/10 bg-sand p-7 md:p-9 lg:sticky lg:top-28">
             <p className="eyebrow">{t("detail.practical")}</p>
             <p className="mt-5 leading-7 text-ink-muted">{t("pricingNote")}</p>
             <a

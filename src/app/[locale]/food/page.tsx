@@ -44,7 +44,10 @@ export default async function FoodPage({ params }: PageProps) {
           <h2 className="section-title">{t("mealsTitle")}</h2>
           <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {meals.map((meal) => (
-              <article className="rounded-2xl bg-white p-7" key={meal}>
+              <article
+                className="rounded-3xl border border-forest/10 bg-white p-7 shadow-[0_14px_40px_rgba(24,54,43,.06)] md:p-8"
+                key={meal}
+              >
                 <div className="flex items-baseline justify-between gap-4">
                   <h3 className="font-serif text-2xl font-semibold">{t(meal)}</h3>
                   <span className="text-sm font-bold text-rust">
@@ -86,12 +89,12 @@ export default async function FoodPage({ params }: PageProps) {
       </section>
       <section className="section bg-forest text-cream">
         <div className="site-container grid gap-10 md:grid-cols-2">
-          <article className="rounded-2xl border border-cream/15 p-8">
+          <article className="rounded-3xl border border-cream/20 p-7 md:p-9">
             <p className="eyebrow text-moss-light">{t("kitchenTitle")}</p>
             <h2 className="mt-4 font-serif text-4xl font-semibold">{t("kitchenTitle")}</h2>
             <p className="mt-5 leading-7 text-cream/70">{t("kitchenText")}</p>
           </article>
-          <article className="rounded-2xl border border-cream/15 p-8">
+          <article className="rounded-3xl border border-cream/20 p-7 md:p-9">
             <p className="eyebrow text-moss-light">{t("barTitle")}</p>
             <h2 className="mt-4 font-serif text-4xl font-semibold">{t("barTitle")}</h2>
             <p className="mt-5 leading-7 text-cream/70">{t("barText")}</p>

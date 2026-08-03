@@ -56,3 +56,5 @@
 - [x] Vérifier la parité structurelle des catalogues RO/EN/FR et localiser les derniers libellés codés en dur.
 - [x] Vérifier les 30 parcours publics localisés, les titres principaux et les routes d'hébergement par tests HTTP.
 - [x] Ajouter le CTA Booking.com localisé sur l'accueil, les pages Hébergements, les fiches, la page Contact et le footer.
+- [x] Améliorer l'UI globale : contrastes et espacements des boutons, rythme des sections, cartes, footer, header dynamique au scroll et cohérence des CTA.
+- [x] Aligner la typographie du site sur le PDF avec Inter Regular, Bold, Italic et Bold Italic, servies localement.

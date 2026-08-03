@@ -63,7 +63,7 @@ export default async function StaysPage({ params }: PageProps) {
             <h2 className="section-title">{t("facilitiesTitle")}</h2>
             <p className="section-copy">{t("facilitiesText")}</p>
           </div>
-          <div className="rounded-2xl bg-sand p-8 lg:p-10">
+          <div className="rounded-3xl border border-forest/10 bg-sand p-7 md:p-9 lg:p-10">
             <p className="leading-7 text-ink-muted">{t("pricingNote")}</p>
             <div className="mt-7 flex flex-wrap gap-3">
               <a

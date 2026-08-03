@@ -46,7 +46,10 @@ export default async function ExperiencesPage({ params }: PageProps) {
             {experiences.map((experience) => {
               const name = t(`items.${experience.id}.name`);
               return (
-                <article className="rounded-2xl bg-white p-7 md:p-9" key={experience.id}>
+                <article
+                  className="rounded-3xl border border-forest/10 bg-white p-7 shadow-[0_14px_40px_rgba(24,54,43,.06)] md:p-9"
+                  key={experience.id}
+                >
                   <h3 className="font-serif text-3xl font-semibold">{name}</h3>
                   <p className="mt-4 leading-7 text-ink-muted">
                     {t(`items.${experience.id}.description`)}

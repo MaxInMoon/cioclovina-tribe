@@ -8,6 +8,7 @@ import { siteConfig } from "@/content/site-config";
 import { Link, usePathname } from "@/i18n/navigation";
 import { whatsappLink } from "@/lib/contact-links";
 import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 import { LocaleSwitcher } from "./locale-switcher";
 
@@ -22,6 +23,8 @@ const navigation = [
 export function Header() {
   const t = useTranslations("common");
   const [open, setOpen] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const [scrolled, setScrolled] = useState(false);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const mobilePanelRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
@@ -30,6 +33,37 @@ export function Header() {
   function isActive(href: (typeof navigation)[number][1]) {
     return pathname === href || pathname.startsWith(`${href}/`);
   }
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+    let frame: number | null = null;
+
+    function updateHeader() {
+      const currentScrollY = window.scrollY;
+      setScrolled(currentScrollY > 16);
+
+      if (open || currentScrollY < 96) {
+        setVisible(true);
+      } else if (Math.abs(currentScrollY - lastScrollY) > 8) {
+        setVisible(currentScrollY < lastScrollY);
+      }
+
+      lastScrollY = currentScrollY;
+      frame = null;
+    }
+
+    function handleScroll() {
+      if (frame === null) frame = requestAnimationFrame(updateHeader);
+    }
+
+    updateHeader();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (frame !== null) cancelAnimationFrame(frame);
+    };
+  }, [open]);
 
   useEffect(() => {
     if (!open) return;
@@ -74,8 +108,16 @@ export function Header() {
   }, [open]);
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50 text-white">
-      <div className="site-container flex h-24 items-center justify-between">
+    <header
+      className={cn(
+        "fixed inset-x-0 top-0 z-50 text-white transition-[transform,background-color,box-shadow] duration-300",
+        visible || open ? "translate-y-0" : "-translate-y-full",
+        scrolled || open
+          ? "bg-forest/95 shadow-[0_8px_30px_rgba(13,32,25,.18)] backdrop-blur-md"
+          : "bg-gradient-to-b from-black/45 to-transparent",
+      )}
+    >
+      <div className="site-container flex h-20 items-center justify-between md:h-24">
         <Link
           className="font-serif text-xl font-semibold tracking-tight"
           href="/"
@@ -113,7 +155,7 @@ export function Header() {
           aria-controls="mobile-navigation"
           aria-expanded={open}
           aria-label={open ? t("labels.close") : t("labels.menu")}
-          className="flex size-11 items-center justify-center rounded-full border border-white/35 lg:hidden"
+          className="flex size-12 items-center justify-center rounded-full border-2 border-white/45 transition-colors hover:bg-white/10 lg:hidden"
           onClick={() => setOpen((value) => !value)}
           ref={menuButtonRef}
           type="button"
@@ -123,7 +165,7 @@ export function Header() {
       </div>
       {open ? (
         <div
-          className="border-t border-white/20 bg-forest px-5 py-6 lg:hidden"
+          className="max-h-[calc(100svh-5rem)] overflow-y-auto border-t border-white/20 bg-forest px-6 py-7 lg:hidden"
           id="mobile-navigation"
           ref={mobilePanelRef}
         >
@@ -134,7 +176,7 @@ export function Header() {
             {navigation.map(([key, href]) => (
               <Link
                 aria-current={isActive(href) ? "page" : undefined}
-                className="py-3 text-lg aria-[current=page]:font-bold aria-[current=page]:text-moss-light"
+                className="rounded-xl px-3 py-3.5 text-lg transition-colors hover:bg-white/10 aria-[current=page]:bg-white/10 aria-[current=page]:font-bold aria-[current=page]:text-moss-light"
                 href={href}
                 key={key}
                 onClick={() => setOpen(false)}

@@ -77,7 +77,7 @@ export default async function HomePage({ params }: PageProps) {
           src="/images/location/aerial-property-view.webp"
         />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(13,32,25,.18)_15%,rgba(13,32,25,.78)_100%)]" />
-        <div className="site-container relative z-10 pb-16 md:pb-24">
+        <div className="site-container relative z-10 pt-36 pb-20 md:pt-44 md:pb-24">
           <p className="eyebrow text-white/75">{t("hero.eyebrow")}</p>
           <h1 className="mt-5 max-w-4xl font-serif text-5xl leading-[1.02] font-medium text-balance md:text-7xl lg:text-[5.5rem]">
             {t("hero.title")}
@@ -87,10 +87,10 @@ export default async function HomePage({ params }: PageProps) {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link className={buttonVariants({ variant: "light" })} href="/stays">
-              {common("cta.exploreStays")} <ArrowRight className="ml-2 size-4" />
+              {common("cta.exploreStays")} <ArrowRight className="size-4" />
             </Link>
             <a
-              className="inline-flex min-h-11 items-center rounded-full border border-white/45 px-5 text-sm font-semibold hover:bg-white/10"
+              className={buttonVariants({ variant: "inverted" })}
               href={whatsapp}
               target="_blank"
               rel="noreferrer"
@@ -132,7 +132,7 @@ export default async function HomePage({ params }: PageProps) {
           <div className="mt-12 grid gap-x-6 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
             {accommodations.slice(0, 6).map((stay) => (
               <Link
-                className="group"
+                className="group rounded-3xl border border-forest/10 bg-white p-3 pb-6 shadow-[0_14px_40px_rgba(24,54,43,.06)] transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-[0_18px_48px_rgba(24,54,43,.12)]"
                 href={{ pathname: "/stays/[slug]", params: { slug: stay.slug } }}
                 key={stay.id}
               >
@@ -145,7 +145,7 @@ export default async function HomePage({ params }: PageProps) {
                     src={stay.image}
                   />
                 </div>
-                <div className="mt-5 flex items-start justify-between gap-4">
+                <div className="mt-5 flex items-start justify-between gap-4 px-3">
                   <div>
                     <h3 className="font-serif text-2xl font-semibold group-hover:text-rust">
                       {stays(`items.${stay.id}.name`)}
@@ -156,7 +156,7 @@ export default async function HomePage({ params }: PageProps) {
                   </div>
                   <ArrowRight className="mt-1 size-5 shrink-0 transition-transform group-hover:translate-x-1" />
                 </div>
-                <p className="mt-4 text-xs font-bold tracking-[0.08em] text-rust uppercase">
+                <p className="mt-4 px-3 text-xs font-bold tracking-[0.08em] text-rust uppercase">
                   {common("labels.from")} {currency.format(stay.pricing[0].amount)} ·{" "}
                   {common("labels.perNight")}
                 </p>
@@ -266,7 +266,7 @@ export default async function HomePage({ params }: PageProps) {
             <h2 className="section-title">{t("location.title")}</h2>
             <p className="section-copy">{t("location.text")}</p>
           </div>
-          <div className="rounded-2xl bg-cream p-7 md:p-9">
+          <div className="rounded-3xl border border-forest/10 bg-cream p-7 shadow-[0_14px_40px_rgba(24,54,43,.06)] md:p-10">
             <p className="text-base leading-7 text-ink-muted">{t("location.note")}</p>
             <a
               className={cn(buttonVariants({ variant: "primary" }), "mt-6")}
@@ -298,7 +298,7 @@ export default async function HomePage({ params }: PageProps) {
               {common("cta.availability")}
             </a>
             <a
-              className="inline-flex min-h-11 items-center justify-center rounded-full border border-white/45 px-5 text-sm font-semibold transition-colors hover:bg-white/10"
+              className={buttonVariants({ variant: "inverted" })}
               href={siteConfig.booking}
               target="_blank"
               rel="noreferrer"

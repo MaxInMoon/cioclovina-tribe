@@ -51,7 +51,7 @@ export default async function ContactPage({ params }: PageProps) {
         <div className="site-container grid gap-5 md:grid-cols-2">
           {cards.map(({ key, Icon, label, href }) => (
             <a
-              className="group rounded-2xl bg-white p-8 transition hover:-translate-y-1"
+              className="group rounded-3xl border border-forest/10 bg-white p-7 shadow-[0_14px_40px_rgba(24,54,43,.06)] transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-[0_18px_48px_rgba(24,54,43,.12)] md:p-9"
               href={href}
               key={key}
               rel="noreferrer"

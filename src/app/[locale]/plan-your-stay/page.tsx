@@ -6,6 +6,7 @@ import { InteriorHero } from "@/components/sections/interior-hero";
 import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/content/site-config";
 import type { Locale } from "@/i18n/routing";
+import { whatsappLink } from "@/lib/contact-links";
 
 type PageProps = { params: Promise<{ locale: Locale }> };
 
@@ -40,7 +41,10 @@ export default async function GuidePage({ params }: PageProps) {
       <section className="section bg-cream">
         <div className="site-container grid gap-6 md:grid-cols-2">
           {blocks.map(([title, items]) => (
-            <article className="rounded-2xl bg-white p-7 md:p-9" key={title}>
+            <article
+              className="rounded-3xl border border-forest/10 bg-white p-7 shadow-[0_14px_40px_rgba(24,54,43,.06)] md:p-9"
+              key={title}
+            >
               <h2 className="font-serif text-3xl font-semibold">{t(title)}</h2>
               <ul className="mt-7 space-y-4">
                 {(t.raw(items) as string[]).map((item) => (
@@ -53,16 +57,26 @@ export default async function GuidePage({ params }: PageProps) {
             </article>
           ))}
         </div>
-        <div className="site-container mt-8 rounded-2xl bg-sand p-7 md:flex md:items-center md:justify-between md:gap-8 md:p-9">
+        <div className="site-container mt-8 rounded-3xl border border-forest/10 bg-sand p-7 md:flex md:items-center md:justify-between md:gap-8 md:p-10">
           <p className="max-w-3xl leading-7 text-ink-muted">{t("notice")}</p>
-          <a
-            className={`${buttonVariants({ variant: "primary" })} mt-6 shrink-0 md:mt-0`}
-            href={siteConfig.maps}
-            rel="noreferrer"
-            target="_blank"
-          >
-            {common("cta.openMaps")}
-          </a>
+          <div className="mt-6 flex shrink-0 flex-wrap gap-3 md:mt-0 md:justify-end">
+            <a
+              className={buttonVariants({ variant: "primary" })}
+              href={whatsappLink(common("whatsapp.general"))}
+              rel="noreferrer"
+              target="_blank"
+            >
+              {common("cta.availability")}
+            </a>
+            <a
+              className={buttonVariants({ variant: "outline" })}
+              href={siteConfig.maps}
+              rel="noreferrer"
+              target="_blank"
+            >
+              {common("cta.openMaps")}
+            </a>
+          </div>
         </div>
       </section>
     </>
