@@ -2,7 +2,7 @@
 
 ## In Progress
 
-- [ ] Vérifier le responsive, l'accessibilité, les traductions et les parcours de navigation.
+- [ ] Effectuer la revue visuelle finale sur mobile et desktop dès qu'un navigateur de test est connecté.
 
 ## Données validées
 
@@ -50,3 +50,6 @@
 - [x] Ajouter les métadonnées SEO localisées sur toutes les pages implémentées.
 - [x] Ajouter les données structurées `LodgingBusiness` et `BreadcrumbList`, le sitemap avec alternates RO/EN/FR et `robots.txt`.
 - [x] Ajouter les pages Confidentialité et Mentions légales dans les trois langues, avec les informations non confirmées explicitement signalées avant publication.
+- [x] Auditer et corriger l'accessibilité statique : lien d'évitement, repère principal, langues de page, focus visible, menu mobile au clavier, états actifs, cibles tactiles, textes alternatifs et contrastes.
+- [x] Vérifier la parité structurelle des catalogues RO/EN/FR et localiser les derniers libellés codés en dur.
+- [x] Vérifier les 30 parcours publics localisés, les titres principaux et les routes d'hébergement par tests HTTP.

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
 import { Footer } from "@/components/layout/footer";
@@ -31,13 +31,20 @@ export default async function LocaleLayout({
 
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: "common.labels" });
 
   return (
     <html lang={locale}>
       <body>
         <NextIntlClientProvider>
+          <a
+            className="fixed top-3 left-3 z-[100] -translate-y-20 rounded-full bg-cream px-5 py-3 font-semibold text-forest shadow-lg transition-transform focus:translate-y-0"
+            href="#main-content"
+          >
+            {t("skipToContent")}
+          </a>
           <Header />
-          <main>{children}</main>
+          <main id="main-content">{children}</main>
           <Footer />
         </NextIntlClientProvider>
       </body>

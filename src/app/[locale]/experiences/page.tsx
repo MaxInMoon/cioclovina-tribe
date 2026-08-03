@@ -55,19 +55,26 @@ export default async function ExperiencesPage({ params }: PageProps) {
                     {experience.durationHours ? (
                       <span className="flex items-center gap-2">
                         <Clock className="size-4 text-rust" />
-                        {experience.durationHours[0]}–{experience.durationHours[1]} h
+                        {common("labels.durationHours", {
+                          min: experience.durationHours[0],
+                          max: experience.durationHours[1],
+                        })}
                       </span>
                     ) : null}
                     {experience.minimumGuests ? (
                       <span className="flex items-center gap-2">
                         <Users className="size-4 text-rust" />
-                        min. {experience.minimumGuests}
+                        {common("labels.minimumGuests", {
+                          count: experience.minimumGuests,
+                        })}
                       </span>
                     ) : null}
                   </div>
                   <div className="mt-7 flex flex-wrap items-center justify-between gap-4 border-t border-forest/10 pt-6">
                     <p className="text-sm font-bold text-rust">
-                      {money.format(experience.price.amount)} / pers.
+                      {common("labels.perPersonPrice", {
+                        price: money.format(experience.price.amount),
+                      })}
                     </p>
                     <a
                       className={buttonVariants({ variant: "outline" })}

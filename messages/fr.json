@@ -25,7 +25,13 @@
       "sharedBathroom": "salle de bain commune",
       "menu": "Menu",
       "close": "Fermer",
-      "language": "Langue"
+      "language": "Langue",
+      "skipToContent": "Aller au contenu",
+      "primaryNavigation": "Navigation principale",
+      "mobileNavigation": "Navigation mobile",
+      "durationHours": "{min}–{max} heures",
+      "minimumGuests": "minimum {count} personnes",
+      "perPersonPrice": "{price} / personne"
     },
     "footer": {
       "tagline": "Hébergements nature, hôtes attentionnés et expériences locales dans les monts Șureanu.",

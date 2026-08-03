@@ -123,7 +123,7 @@ export default async function StayDetailPage({ params }: PageProps) {
               key={image}
             >
               <Image
-                alt={`${name} — ${index + 1}`}
+                alt={index === 0 ? name : ""}
                 className="object-cover"
                 fill
                 priority={index === 0}

@@ -20,10 +20,18 @@ export async function Footer() {
             {t("footer.explore")}
           </p>
           <div className="mt-4 flex flex-col gap-3 text-sm">
-            <Link href="/stays">{t("nav.stays")}</Link>
-            <Link href="/experiences">{t("nav.experiences")}</Link>
-            <Link href="/food">{t("nav.food")}</Link>
-            <Link href="/plan-your-stay">{t("nav.guide")}</Link>
+            <Link className="py-1" href="/stays">
+              {t("nav.stays")}
+            </Link>
+            <Link className="py-1" href="/experiences">
+              {t("nav.experiences")}
+            </Link>
+            <Link className="py-1" href="/food">
+              {t("nav.food")}
+            </Link>
+            <Link className="py-1" href="/plan-your-stay">
+              {t("nav.guide")}
+            </Link>
           </div>
         </div>
         <div>
@@ -31,9 +39,13 @@ export async function Footer() {
             {t("footer.contact")}
           </p>
           <div className="mt-4 flex flex-col gap-3 text-sm">
-            <a href={siteConfig.whatsapp}>{siteConfig.phoneDisplay}</a>
-            <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
-            <a href={siteConfig.instagram} target="_blank" rel="noreferrer">
+            <a className="py-1" href={siteConfig.whatsapp}>
+              {siteConfig.phoneDisplay}
+            </a>
+            <a className="py-1" href={`mailto:${siteConfig.email}`}>
+              {siteConfig.email}
+            </a>
+            <a className="py-1" href={siteConfig.instagram} target="_blank" rel="noreferrer">
               Instagram
             </a>
           </div>
@@ -44,8 +56,12 @@ export async function Footer() {
           © {new Date().getFullYear()} {siteConfig.name}. {t("footer.rights")}
         </p>
         <div className="flex gap-5">
-          <Link href="/privacy">{t("footer.privacy")}</Link>
-          <Link href="/legal">{t("footer.legal")}</Link>
+          <Link className="py-1" href="/privacy">
+            {t("footer.privacy")}
+          </Link>
+          <Link className="py-1" href="/legal">
+            {t("footer.legal")}
+          </Link>
         </div>
       </div>
     </footer>

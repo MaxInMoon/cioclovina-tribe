@@ -54,7 +54,7 @@ export default async function ContactPage({ params }: PageProps) {
               <Icon className="size-7 text-rust" strokeWidth={1.6} />
               <h2 className="mt-6 font-serif text-3xl font-semibold">{t(`${key}Title`)}</h2>
               <p className="mt-3 leading-7 text-ink-muted">{t(`${key}Text`)}</p>
-              <p className="mt-6 text-sm font-bold text-forest underline decoration-forest/20 underline-offset-4">
+              <p className="mt-6 break-all text-sm font-bold text-forest underline decoration-forest/20 underline-offset-4">
                 {label}
               </p>
             </a>

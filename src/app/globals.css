@@ -45,6 +45,11 @@ a {
   text-decoration: none;
 }
 
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 3px solid #a84f32;
+  outline-offset: 3px;
+}
+
 .site-container {
   width: min(100% - 2.5rem, 80rem);
   margin-inline: auto;

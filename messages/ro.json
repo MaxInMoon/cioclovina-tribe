@@ -25,7 +25,13 @@
       "sharedBathroom": "baie comună",
       "menu": "Meniu",
       "close": "Închide",
-      "language": "Limbă"
+      "language": "Limbă",
+      "skipToContent": "Sari la conținut",
+      "primaryNavigation": "Navigare principală",
+      "mobileNavigation": "Navigare mobilă",
+      "durationHours": "{min}–{max} ore",
+      "minimumGuests": "minimum {count} persoane",
+      "perPersonPrice": "{price} / persoană"
     },
     "footer": {
       "tagline": "Cazare în natură, gazde aproape și experiențe locale în Munții Șureanu.",

@@ -25,7 +25,13 @@
       "sharedBathroom": "shared bathroom",
       "menu": "Menu",
       "close": "Close",
-      "language": "Language"
+      "language": "Language",
+      "skipToContent": "Skip to content",
+      "primaryNavigation": "Primary navigation",
+      "mobileNavigation": "Mobile navigation",
+      "durationHours": "{min}–{max} hours",
+      "minimumGuests": "minimum {count} guests",
+      "perPersonPrice": "{price} / person"
     },
     "footer": {
       "tagline": "Nature stays, thoughtful hosts and local experiences in the Șureanu Mountains.",
