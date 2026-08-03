@@ -2,7 +2,7 @@
 
 ## In Progress
 
-- Aucune tâche.
+- [ ] Rédiger le contenu source roumain, puis adapter et vérifier les versions anglaise et française, métadonnées incluses.
 
 ## Données validées
 
@@ -35,7 +35,6 @@
 ## Backlog
 
 - [ ] Faire valider la source de vérité regroupée dans la section « À valider plus tard ».
-- [ ] Rédiger le contenu source roumain, puis adapter et vérifier les versions anglaise et française, métadonnées incluses.
 - [ ] Implémenter le site Next.js multilingue (RO/EN/FR) avec next-intl, Tailwind et shadcn/ui.
 - [ ] Ajouter les CTA de contact (WhatsApp, e-mail et Google Maps) avec les coordonnées validées.
 - [ ] Ajouter les métadonnées SEO localisées et les données structurées pertinentes.
