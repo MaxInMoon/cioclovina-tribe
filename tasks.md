@@ -2,19 +2,21 @@
 
 ## In Progress
 
-- [ ] Effectuer la revue visuelle finale sur mobile et desktop dès qu'un navigateur de test est connecté.
+- Aucune tâche.
 
 ## Données validées
 
 - WhatsApp : `+40723635785` - lien direct `https://wa.me/40723635785`.
 - Google Maps / Google Place : `https://maps.app.goo.gl/qw64mCHQsGQMbiPF8?g_st=iw`.
 - Instagram : `https://www.instagram.com/cioclovinatribe`.
+- Booking.com : `https://www.booking.com/hotel/ro/cioclovina-tribe`.
 - Toutes les photos intégrées au PDF peuvent être utilisées sur le site.
 
 ## Décisions provisoires
 
 - Prévoir les trois langues RO/EN/FR avec le roumain comme langue par défaut.
 - Utiliser WhatsApp comme CTA principal de demande de disponibilité.
+- Utiliser Booking.com comme CTA secondaire de réservation en ligne.
 - Utiliser temporairement l'e-mail du PDF (`cioclovinatribe@gmail.com`) comme CTA secondaire.
 - Afficher les tarifs du PDF comme tarifs indicatifs tant qu'ils ne sont pas confirmés.
 - Ne pas inventer les détails absents : employer des formulations prudentes et omettre les données sensibles non confirmées.
@@ -53,3 +55,4 @@
 - [x] Auditer et corriger l'accessibilité statique : lien d'évitement, repère principal, langues de page, focus visible, menu mobile au clavier, états actifs, cibles tactiles, textes alternatifs et contrastes.
 - [x] Vérifier la parité structurelle des catalogues RO/EN/FR et localiser les derniers libellés codés en dur.
 - [x] Vérifier les 30 parcours publics localisés, les titres principaux et les routes d'hébergement par tests HTTP.
+- [x] Ajouter le CTA Booking.com localisé sur l'accueil, les pages Hébergements, les fiches, la page Contact et le footer.

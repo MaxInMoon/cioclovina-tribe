@@ -8,7 +8,7 @@ import { StayCard } from "@/components/stays/stay-card";
 import { buttonVariants } from "@/components/ui/button";
 import { JsonLd } from "@/components/seo/json-ld";
 import { accommodations } from "@/content/accommodations";
-import { siteUrl } from "@/content/site-config";
+import { siteConfig, siteUrl } from "@/content/site-config";
 import { getPathname, Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 import { whatsappLink } from "@/lib/contact-links";
@@ -170,6 +170,14 @@ export default async function StayDetailPage({ params }: PageProps) {
               target="_blank"
             >
               {common("cta.availability")}
+            </a>
+            <a
+              className={`${buttonVariants({ variant: "outline" })} mt-3 w-full`}
+              href={siteConfig.booking}
+              rel="noreferrer"
+              target="_blank"
+            >
+              {common("cta.booking")}
             </a>
           </aside>
         </div>

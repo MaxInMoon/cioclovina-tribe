@@ -63,7 +63,7 @@ export default async function HomePage({ params }: PageProps) {
             `${siteUrl}/images/location/aerial-property-view.webp`,
             `${siteUrl}/images/hero/cabin-interior-mountain-view.webp`,
           ],
-          sameAs: [siteConfig.instagram],
+          sameAs: [siteConfig.instagram, siteConfig.booking],
           hasMap: siteConfig.maps,
         }}
       />
@@ -288,14 +288,24 @@ export default async function HomePage({ params }: PageProps) {
             </h2>
             <p className="mt-5 max-w-xl text-lg leading-8 text-white/80">{t("finalCta.text")}</p>
           </div>
-          <a
-            className={buttonVariants({ variant: "light" })}
-            href={whatsapp}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {common("cta.availability")}
-          </a>
+          <div className="flex flex-wrap gap-3">
+            <a
+              className={buttonVariants({ variant: "light" })}
+              href={whatsapp}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {common("cta.availability")}
+            </a>
+            <a
+              className="inline-flex min-h-11 items-center justify-center rounded-full border border-white/45 px-5 text-sm font-semibold transition-colors hover:bg-white/10"
+              href={siteConfig.booking}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {common("cta.booking")}
+            </a>
+          </div>
         </div>
       </section>
     </>

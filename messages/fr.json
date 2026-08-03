@@ -13,6 +13,7 @@
       "exploreStays": "Voir les hébergements",
       "learnMore": "En savoir plus",
       "openMaps": "Ouvrir dans Google Maps",
+      "booking": "Réserver sur Booking.com",
       "email": "Nous écrire",
       "instagram": "Nous suivre sur Instagram"
     },
@@ -309,6 +310,8 @@
     "intro": "Le plus simple est de nous écrire sur WhatsApp. Indiquez vos dates, le nombre d'adultes et d'enfants et l'hébergement qui vous intéresse.",
     "whatsappTitle": "WhatsApp",
     "whatsappText": "Pour les disponibilités, activités et questions rapides.",
+    "bookingTitle": "Réserver en ligne",
+    "bookingText": "Consultez les disponibilités et réservez directement sur Booking.com.",
     "emailTitle": "E-mail",
     "emailText": "Pour les messages plus détaillés.",
     "mapsTitle": "Google Maps",

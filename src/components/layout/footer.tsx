@@ -42,6 +42,9 @@ export async function Footer() {
             <a className="py-1" href={siteConfig.whatsapp}>
               {siteConfig.phoneDisplay}
             </a>
+            <a className="py-1" href={siteConfig.booking} target="_blank" rel="noreferrer">
+              Booking.com
+            </a>
             <a className="py-1" href={`mailto:${siteConfig.email}`}>
               {siteConfig.email}
             </a>

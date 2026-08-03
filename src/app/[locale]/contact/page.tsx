@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Camera, Mail, MapPin, MessageCircle } from "lucide-react";
+import { CalendarCheck, Camera, Mail, MapPin, MessageCircle } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { InteriorHero } from "@/components/sections/interior-hero";
@@ -28,6 +28,12 @@ export default async function ContactPage({ params }: PageProps) {
       Icon: MessageCircle,
       label: siteConfig.phoneDisplay,
       href: whatsappLink(common("whatsapp.general")),
+    },
+    {
+      key: "booking",
+      Icon: CalendarCheck,
+      label: "Booking.com",
+      href: siteConfig.booking,
     },
     { key: "email", Icon: Mail, label: siteConfig.email, href: `mailto:${siteConfig.email}` },
     { key: "maps", Icon: MapPin, label: common("cta.openMaps"), href: siteConfig.maps },

@@ -13,6 +13,7 @@
       "exploreStays": "Descoperă cazările",
       "learnMore": "Află mai multe",
       "openMaps": "Deschide în Google Maps",
+      "booking": "Rezervă pe Booking.com",
       "email": "Trimite-ne un e-mail",
       "instagram": "Urmărește-ne pe Instagram"
     },
@@ -309,6 +310,8 @@
     "intro": "Cel mai simplu este să ne scrii pe WhatsApp. Include perioada, numărul de adulți și copii și cazarea care te interesează.",
     "whatsappTitle": "WhatsApp",
     "whatsappText": "Pentru disponibilitate, activități și întrebări rapide.",
+    "bookingTitle": "Rezervare online",
+    "bookingText": "Vezi disponibilitatea și rezervă direct prin Booking.com.",
     "emailTitle": "E-mail",
     "emailText": "Pentru mesaje mai detaliate.",
     "mapsTitle": "Google Maps",

@@ -5,6 +5,7 @@ import { InteriorHero } from "@/components/sections/interior-hero";
 import { StayCard } from "@/components/stays/stay-card";
 import { buttonVariants } from "@/components/ui/button";
 import { accommodations } from "@/content/accommodations";
+import { siteConfig } from "@/content/site-config";
 import type { Locale } from "@/i18n/routing";
 import { whatsappLink } from "@/lib/contact-links";
 
@@ -64,14 +65,24 @@ export default async function StaysPage({ params }: PageProps) {
           </div>
           <div className="rounded-2xl bg-sand p-8 lg:p-10">
             <p className="leading-7 text-ink-muted">{t("pricingNote")}</p>
-            <a
-              className={`${buttonVariants({ variant: "primary" })} mt-7`}
-              href={whatsappLink(common("whatsapp.general"))}
-              rel="noreferrer"
-              target="_blank"
-            >
-              {common("cta.availability")}
-            </a>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <a
+                className={buttonVariants({ variant: "primary" })}
+                href={whatsappLink(common("whatsapp.general"))}
+                rel="noreferrer"
+                target="_blank"
+              >
+                {common("cta.availability")}
+              </a>
+              <a
+                className={buttonVariants({ variant: "outline" })}
+                href={siteConfig.booking}
+                rel="noreferrer"
+                target="_blank"
+              >
+                {common("cta.booking")}
+              </a>
+            </div>
           </div>
         </div>
       </section>

@@ -6,6 +6,7 @@ export const siteConfig = {
   email: "cioclovinatribe@gmail.com",
   instagram: "https://www.instagram.com/cioclovinatribe",
   maps: "https://maps.app.goo.gl/qw64mCHQsGQMbiPF8?g_st=iw",
+  booking: "https://www.booking.com/hotel/ro/cioclovina-tribe",
   minimumStayNights: 2,
   advanceNoticeHours: 48,
 } as const;

@@ -13,6 +13,7 @@
       "exploreStays": "Explore the stays",
       "learnMore": "Learn more",
       "openMaps": "Open in Google Maps",
+      "booking": "Book on Booking.com",
       "email": "Email us",
       "instagram": "Follow us on Instagram"
     },
@@ -309,6 +310,8 @@
     "intro": "The easiest way to reach us is on WhatsApp. Include your dates, the number of adults and children, and the stay you are interested in.",
     "whatsappTitle": "WhatsApp",
     "whatsappText": "For availability, activities and quick questions.",
+    "bookingTitle": "Book online",
+    "bookingText": "Check availability and book directly through Booking.com.",
     "emailTitle": "Email",
     "emailText": "For more detailed messages.",
     "mapsTitle": "Google Maps",
