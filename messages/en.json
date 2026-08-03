@@ -105,11 +105,24 @@
       "text": "You'll find us cooking, driving the 4x4 or sharing stories about the area. We're here to help you feel at home and enjoy the quiet beauty of this place.",
       "imageAlt": "Roxana and Bogdan, the Cioclovina Tribe hosts, with their family"
     },
+    "gallery": {
+      "eyebrow": "In pictures",
+      "title": "A few reasons to stay a little longer",
+      "text": "Open landscapes, welcoming rooms and tables set with the mountains in view.",
+      "images": {
+        "landscape": "Meadow and mountains surrounding Cioclovina Tribe",
+        "cabin": "Cabin bedroom opening onto the landscape",
+        "veranda": "Furnished veranda among the orchard trees",
+        "tent": "Furnished tent overlooking the mountains",
+        "table": "Outdoor dining table with a mountain view"
+      }
+    },
     "location": {
       "eyebrow": "Getting here",
       "title": "The journey is part of the story",
       "text": "We are 13 km from Boșorod, including 8 km on an unpaved road. The last 2 km require a 4x4, so message us when you arrive and we will come to meet you.",
-      "note": "Please do not park in Boșorod before speaking with us. We will confirm the meeting point."
+      "note": "Please do not park in Boșorod before speaking with us. We will confirm the meeting point.",
+      "mapAlt": "Map of the area surrounding Cioclovina Tribe"
     },
     "finalCta": {
       "title": "Can you picture yourself here?",
@@ -127,10 +140,24 @@
     "campingTitle": "Bring your own tent",
     "facilitiesTitle": "Shared facilities",
     "facilitiesText": "Shared bathrooms have hot showers, toilets, hand soap and shower gel. The fully equipped kitchen and dining room are available for a fee; confirm the current terms with the hosts.",
+    "facilities": {
+      "bathroomsTitle": "Bathrooms and showers",
+      "bathroomsText": "Hot showers, toilets and essential toiletries are available in the shared facilities.",
+      "bathroomsImageAlt": "Hot shower in the shared bathroom facilities",
+      "kitchenTitle": "Shared kitchen",
+      "kitchenText": "An equipped kitchen is available for an additional fee, subject to confirmation with the hosts.",
+      "kitchenImageAlt": "Equipped outdoor kitchen with a grill",
+      "diningTitle": "Covered dining area",
+      "diningText": "A sheltered space for cooking, sharing a meal and spending the evening together.",
+      "diningImageAlt": "Covered dining area at Cioclovina Tribe"
+    },
+    "bookingCtaTitle": "Choose your retreat",
+    "bookingCtaText": "Rates remain indicative. Message us for current availability or book directly through Booking.com.",
     "pricingNote": "Rates come from the existing guide and remain indicative until the hosts confirm availability and terms.",
     "detail": {
       "features": "What you'll find",
       "gallery": "Gallery",
+      "galleryImageAlt": "{stay}, photo {index}",
       "alternatives": "You may also like",
       "practical": "Good to know"
     },
@@ -205,6 +232,12 @@
     "nearbyTitle": "Nearby",
     "nearbyText": "Canyoning may be arranged on request through local providers. Route, level, equipment, price and weather conditions must be confirmed before booking.",
     "notice": "Final duration, difficulty, availability and terms are confirmed by the hosts. Information and rates from the guide are indicative.",
+    "imageAlts": {
+      "hero": "Electric bike ride on a mountain trail",
+      "onSite": "Quiet meadow surrounding Cioclovina Tribe",
+      "canyoningWaterfall": "Descending a waterfall during a canyoning trip",
+      "canyoningGroup": "Group equipped for a canyoning trip"
+    },
     "items": {
       "e-bike": {
         "name": "Fundătura Ponorului by e-bike",
@@ -257,6 +290,7 @@
     "eyebrow": "Before you set off",
     "title": "Everything you need for a peaceful stay",
     "intro": "This is a secluded place, and the final stretch requires a little coordination. Message us before arrival and we will guide you step by step.",
+    "mapAlt": "Access map for Cioclovina Tribe in the Șureanu Mountains",
     "arrivalTitle": "Getting here",
     "arrivalSteps": [
       "Search for “Cioclovina Tribe” in Google Maps or Waze.",

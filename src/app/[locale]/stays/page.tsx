@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import { CalendarCheck, MessageCircle } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { InteriorHero } from "@/components/sections/interior-hero";
@@ -56,33 +58,68 @@ export default async function StaysPage({ params }: PageProps) {
           </div>
         </div>
       </section>
-      <section className="section bg-white">
-        <div className="site-container grid gap-10 lg:grid-cols-2">
-          <div>
+      <section className="section bg-white" id="facilities">
+        <div className="site-container">
+          <div className="max-w-3xl">
             <p className="eyebrow">{t("facilitiesTitle")}</p>
             <h2 className="section-title">{t("facilitiesTitle")}</h2>
             <p className="section-copy">{t("facilitiesText")}</p>
           </div>
-          <div className="rounded-3xl border border-forest/10 bg-sand p-7 md:p-9 lg:p-10">
-            <p className="leading-7 text-ink-muted">{t("pricingNote")}</p>
-            <div className="mt-7 flex flex-wrap gap-3">
-              <a
-                className={buttonVariants({ variant: "primary" })}
-                href={whatsappLink(common("whatsapp.general"))}
-                rel="noreferrer"
-                target="_blank"
+          <div className="mt-12 grid gap-5 md:grid-cols-3">
+            {[
+              ["bathrooms", "/images/facilities/shared-bathroom/shower.webp"],
+              ["kitchen", "/images/facilities/shared-kitchen/outdoor-kitchen-grill.webp"],
+              ["dining", "/images/facilities/shared-kitchen/covered-dining-area.webp"],
+            ].map(([key, image]) => (
+              <article
+                className="overflow-hidden rounded-3xl border border-forest/10 bg-cream"
+                key={key}
               >
-                {common("cta.availability")}
-              </a>
-              <a
-                className={buttonVariants({ variant: "outline" })}
-                href={siteConfig.booking}
-                rel="noreferrer"
-                target="_blank"
-              >
-                {common("cta.booking")}
-              </a>
-            </div>
+                <div className="relative aspect-[4/3]">
+                  <Image
+                    alt={t(`facilities.${key}ImageAlt`)}
+                    className="object-cover"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    src={image}
+                  />
+                </div>
+                <div className="p-6 md:p-7">
+                  <h3 className="text-xl font-bold">{t(`facilities.${key}Title`)}</h3>
+                  <p className="mt-3 text-sm leading-6 text-ink-muted">
+                    {t(`facilities.${key}Text`)}
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="section bg-rust text-white">
+        <div className="site-container flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
+          <div className="max-w-2xl">
+            <h2 className="text-4xl font-bold text-balance md:text-5xl">{t("bookingCtaTitle")}</h2>
+            <p className="mt-5 max-w-xl text-lg leading-8 text-white/80">{t("bookingCtaText")}</p>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            <a
+              className={buttonVariants({ variant: "light" })}
+              href={whatsappLink(common("whatsapp.general"))}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <MessageCircle aria-hidden className="size-4" />
+              {common("cta.availability")}
+            </a>
+            <a
+              className={buttonVariants({ variant: "inverted" })}
+              href={siteConfig.booking}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <CalendarCheck aria-hidden className="size-4" />
+              {common("cta.booking")}
+            </a>
           </div>
         </div>
       </section>

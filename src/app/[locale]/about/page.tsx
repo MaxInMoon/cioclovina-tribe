@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { MessageCircle } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { InteriorHero } from "@/components/sections/interior-hero";
@@ -44,6 +45,7 @@ export default async function AboutPage({ params }: PageProps) {
               rel="noreferrer"
               target="_blank"
             >
+              <MessageCircle aria-hidden className="size-4" />
               {common("cta.availability")}
             </a>
           </div>

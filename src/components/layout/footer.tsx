@@ -1,3 +1,4 @@
+import { CalendarCheck, Camera, Mail, MessageCircle } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
 import { siteConfig } from "@/content/site-config";
@@ -46,31 +47,35 @@ export async function Footer() {
           </p>
           <div className="mt-5 flex flex-col gap-2 text-sm">
             <a
-              className="w-fit py-2 transition-colors hover:text-moss-light"
+              className="flex w-fit items-center gap-2 py-2 transition-colors duration-300 hover:text-moss-light"
               href={siteConfig.whatsapp}
             >
+              <MessageCircle aria-hidden className="size-4" />
               {siteConfig.phoneDisplay}
             </a>
             <a
-              className="w-fit py-2 transition-colors hover:text-moss-light"
+              className="flex w-fit items-center gap-2 py-2 transition-colors duration-300 hover:text-moss-light"
               href={siteConfig.booking}
               target="_blank"
               rel="noreferrer"
             >
+              <CalendarCheck aria-hidden className="size-4" />
               Booking.com
             </a>
             <a
-              className="w-fit py-2 transition-colors hover:text-moss-light"
+              className="flex w-fit items-center gap-2 py-2 transition-colors duration-300 hover:text-moss-light"
               href={`mailto:${siteConfig.email}`}
             >
+              <Mail aria-hidden className="size-4" />
               {siteConfig.email}
             </a>
             <a
-              className="w-fit py-2 transition-colors hover:text-moss-light"
+              className="flex w-fit items-center gap-2 py-2 transition-colors duration-300 hover:text-moss-light"
               href={siteConfig.instagram}
               target="_blank"
               rel="noreferrer"
             >
+              <Camera aria-hidden className="size-4" />
               Instagram
             </a>
           </div>

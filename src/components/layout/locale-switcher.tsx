@@ -8,9 +8,9 @@ import { routing, type Locale } from "@/i18n/routing";
 import { usePathname, useRouter } from "@/i18n/navigation";
 
 const localeLabels: Record<Locale, string> = {
-  ro: "RO",
-  en: "EN",
-  fr: "FR",
+  ro: "🇷🇴 RO",
+  en: "🇬🇧 EN",
+  fr: "🇫🇷 FR",
 };
 
 type StaticPathname =
@@ -48,7 +48,7 @@ export function LocaleSwitcher() {
       <span className="sr-only">{t("language")}</span>
       <select
         aria-label={t("language")}
-        className="h-11 appearance-none rounded-full border border-current/20 bg-transparent py-2 pr-8 pl-3 text-xs font-bold tracking-[0.12em] outline-offset-2"
+        className="h-12 appearance-none rounded-full border-2 border-current/25 bg-transparent py-2 pr-9 pl-4 text-xs font-bold tracking-[0.08em] outline-offset-2 transition-colors duration-300 hover:bg-white/10"
         disabled={isPending}
         onChange={(event) => changeLocale(event.target.value as Locale)}
         value={locale}
@@ -59,7 +59,7 @@ export function LocaleSwitcher() {
           </option>
         ))}
       </select>
-      <span aria-hidden className="pointer-events-none absolute top-3 right-3">
+      <span aria-hidden className="pointer-events-none absolute top-3.5 right-3.5">
         ↓
       </span>
     </label>

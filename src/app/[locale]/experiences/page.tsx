@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Clock, Users } from "lucide-react";
+import { Clock, MessageCircle, Users } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { InteriorHero } from "@/components/sections/interior-hero";
@@ -35,6 +35,7 @@ export default async function ExperiencesPage({ params }: PageProps) {
       <InteriorHero
         eyebrow={t("eyebrow")}
         image="/images/experiences/e-bike-trail.webp"
+        imageAlt={t("imageAlts.hero")}
         intro={t("intro")}
         title={t("title")}
       />
@@ -85,6 +86,7 @@ export default async function ExperiencesPage({ params }: PageProps) {
                       rel="noreferrer"
                       target="_blank"
                     >
+                      <MessageCircle aria-hidden className="size-4" />
                       {common("cta.availability")}
                     </a>
                   </div>
@@ -106,7 +108,7 @@ export default async function ExperiencesPage({ params }: PageProps) {
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
             <Image
-              alt=""
+              alt={t("imageAlts.onSite")}
               className="object-cover"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -120,7 +122,7 @@ export default async function ExperiencesPage({ params }: PageProps) {
           <div className="grid grid-cols-2 gap-3">
             <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
               <Image
-                alt=""
+                alt={t("imageAlts.canyoningWaterfall")}
                 className="object-cover"
                 fill
                 sizes="25vw"
@@ -129,7 +131,7 @@ export default async function ExperiencesPage({ params }: PageProps) {
             </div>
             <div className="relative mt-10 aspect-[3/4] overflow-hidden rounded-2xl">
               <Image
-                alt=""
+                alt={t("imageAlts.canyoningGroup")}
                 className="object-cover"
                 fill
                 sizes="25vw"

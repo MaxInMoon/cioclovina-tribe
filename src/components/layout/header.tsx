@@ -1,6 +1,6 @@
 "use client";
 
-import { Menu, X } from "lucide-react";
+import { Menu, MessageCircle, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
 
@@ -148,6 +148,7 @@ export function Header() {
             target="_blank"
             rel="noreferrer"
           >
+            <MessageCircle aria-hidden className="size-4" />
             {t("cta.availability")}
           </a>
         </div>
@@ -192,6 +193,7 @@ export function Header() {
                 target="_blank"
                 rel="noreferrer"
               >
+                <MessageCircle aria-hidden className="size-4" />
                 {t("cta.availability")}
               </a>
             </div>

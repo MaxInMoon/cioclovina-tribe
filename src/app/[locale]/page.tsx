@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { ArrowRight, Bike, CookingPot, House, MapPin } from "lucide-react";
+import { ArrowRight, Bike, CookingPot, House, MapPin, MessageCircle } from "lucide-react";
 
 import { buttonVariants } from "@/components/ui/button";
+import { PhotoGallery } from "@/components/gallery/photo-gallery";
+import { StaticLocationMap } from "@/components/maps/static-location-map";
 import { JsonLd } from "@/components/seo/json-ld";
 import { accommodations } from "@/content/accommodations";
 import { siteConfig, siteUrl } from "@/content/site-config";
@@ -95,6 +97,7 @@ export default async function HomePage({ params }: PageProps) {
               target="_blank"
               rel="noreferrer"
             >
+              <MessageCircle aria-hidden className="size-4" />
               {common("cta.availability")}
             </a>
           </div>
@@ -259,6 +262,41 @@ export default async function HomePage({ params }: PageProps) {
         </div>
       </section>
 
+      <section className="section bg-cream" id="gallery">
+        <div className="site-container">
+          <div className="max-w-3xl">
+            <p className="eyebrow">{t("gallery.eyebrow")}</p>
+            <h2 className="section-title">{t("gallery.title")}</h2>
+            <p className="section-copy">{t("gallery.text")}</p>
+          </div>
+          <PhotoGallery
+            className="mt-12"
+            images={[
+              {
+                src: "/images/location/pasture-near-cioclovina.webp",
+                alt: t("gallery.images.landscape"),
+              },
+              {
+                src: "/images/accommodations/hammock-cabin/bedroom-panoramic-view.webp",
+                alt: t("gallery.images.cabin"),
+              },
+              {
+                src: "/images/accommodations/orchard-cabin/veranda-seating.webp",
+                alt: t("gallery.images.veranda"),
+              },
+              {
+                src: "/images/accommodations/star-tent/exterior-mountain-view.webp",
+                alt: t("gallery.images.tent"),
+              },
+              {
+                src: "/images/food/private-dining/mountain-table.webp",
+                alt: t("gallery.images.table"),
+              },
+            ]}
+          />
+        </div>
+      </section>
+
       <section className="section relative overflow-hidden bg-sand">
         <div className="site-container relative z-10 grid gap-8 lg:grid-cols-[1fr_.8fr]">
           <div>
@@ -266,16 +304,19 @@ export default async function HomePage({ params }: PageProps) {
             <h2 className="section-title">{t("location.title")}</h2>
             <p className="section-copy">{t("location.text")}</p>
           </div>
-          <div className="rounded-3xl border border-forest/10 bg-cream p-7 shadow-[0_14px_40px_rgba(24,54,43,.06)] md:p-10">
-            <p className="text-base leading-7 text-ink-muted">{t("location.note")}</p>
-            <a
-              className={cn(buttonVariants({ variant: "primary" }), "mt-6")}
-              href={siteConfig.maps}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {common("cta.openMaps")}
-            </a>
+          <div className="overflow-hidden rounded-3xl border border-forest/10 bg-cream shadow-[0_14px_40px_rgba(24,54,43,.06)]">
+            <StaticLocationMap alt={t("location.mapAlt")} />
+            <div className="p-7 md:p-10">
+              <p className="text-base leading-7 text-ink-muted">{t("location.note")}</p>
+              <a
+                className={cn(buttonVariants({ variant: "primary" }), "mt-6")}
+                href={siteConfig.maps}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {common("cta.openMaps")}
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -295,6 +336,7 @@ export default async function HomePage({ params }: PageProps) {
               target="_blank"
               rel="noreferrer"
             >
+              <MessageCircle aria-hidden className="size-4" />
               {common("cta.availability")}
             </a>
             <a

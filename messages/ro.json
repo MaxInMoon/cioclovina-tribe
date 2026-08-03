@@ -105,11 +105,24 @@
       "text": "Ne veți întâlni pregătind bucatele, conducând mașina 4x4 sau povestindu-vă despre locurile din jur. Suntem aici ca să vă simțiți bine și să vă bucurați de liniștea locului.",
       "imageAlt": "Roxana și Bogdan, gazdele Cioclovina Tribe, împreună cu familia"
     },
+    "gallery": {
+      "eyebrow": "În imagini",
+      "title": "Câteva motive să mai rămâi puțin",
+      "text": "Peisaje deschise, camere primitoare și mese așezate cu munții în față.",
+      "images": {
+        "landscape": "Pajiște și munți în jurul Cioclovina Tribe",
+        "cabin": "Dormitor de cabană deschis spre peisaj",
+        "veranda": "Verandă amenajată printre pomii din livadă",
+        "tent": "Cort amenajat cu vedere spre munți",
+        "table": "Masă în aer liber cu vedere spre munți"
+      }
+    },
     "location": {
       "eyebrow": "Cum ajungi",
       "title": "Drumul face parte din poveste",
       "text": "Locul se află la 13 km de Boșorod, dintre care 8 km sunt pe drum neasfaltat. Ultimii 2 km se parcurg doar cu 4x4, așa că scrie-ne când ajungi și venim să te întâmpinăm.",
-      "note": "Nu parca în Boșorod înainte să vorbești cu noi. Îți vom confirma punctul de întâlnire."
+      "note": "Nu parca în Boșorod înainte să vorbești cu noi. Îți vom confirma punctul de întâlnire.",
+      "mapAlt": "Harta zonei din jurul Cioclovina Tribe"
     },
     "finalCta": {
       "title": "Te vezi deja aici?",
@@ -127,10 +140,24 @@
     "campingTitle": "Campare cu cortul propriu",
     "facilitiesTitle": "Facilități comune",
     "facilitiesText": "Băile comune au dușuri cu apă caldă, toalete, săpun și gel de duș. Bucătăria și sala de mese complet utilate sunt disponibile contra cost; condițiile se confirmă cu gazda.",
+    "facilities": {
+      "bathroomsTitle": "Băi și dușuri",
+      "bathroomsText": "Dușurile cu apă caldă, toaletele și produsele esențiale de igienă sunt disponibile în spațiile comune.",
+      "bathroomsImageAlt": "Duș cu apă caldă în baia comună",
+      "kitchenTitle": "Bucătărie comună",
+      "kitchenText": "Bucătăria echipată poate fi folosită contra cost, după confirmarea condițiilor cu gazda.",
+      "kitchenImageAlt": "Bucătărie exterioară echipată cu grătar",
+      "diningTitle": "Spațiu de luat masa acoperit",
+      "diningText": "Un loc adăpostit pentru gătit, servit masa și petrecut seara împreună.",
+      "diningImageAlt": "Spațiu de luat masa acoperit la Cioclovina Tribe"
+    },
+    "bookingCtaTitle": "Alege-ți refugiul",
+    "bookingCtaText": "Tarifele rămân orientative. Scrie-ne pentru disponibilitatea actuală sau rezervă direct prin Booking.com.",
     "pricingNote": "Tarifele sunt preluate din ghidul existent și rămân orientative până la confirmarea disponibilității și condițiilor de către gazdă.",
     "detail": {
       "features": "Ce găsești aici",
       "gallery": "Galerie",
+      "galleryImageAlt": "{stay}, fotografia {index}",
       "alternatives": "Poate îți plac și",
       "practical": "Bine de știut"
     },
@@ -205,6 +232,12 @@
     "nearbyTitle": "În apropiere",
     "nearbyText": "Canyoningul poate fi organizat la cerere prin furnizori locali. Traseul, nivelul, echipamentul, prețul și condițiile meteo trebuie confirmate înainte de rezervare.",
     "notice": "Durata, dificultatea, disponibilitatea și condițiile finale se confirmă cu gazda. Informațiile și tarifele din ghid sunt orientative.",
+    "imageAlts": {
+      "hero": "Tur cu bicicleta electrică pe un traseu montan",
+      "onSite": "Pajiște liniștită în jurul Cioclovina Tribe",
+      "canyoningWaterfall": "Coborârea unei cascade în timpul unei ture de canyoning",
+      "canyoningGroup": "Grup echipat pentru o tură de canyoning"
+    },
     "items": {
       "e-bike": {
         "name": "Fundătura Ponorului cu bicicleta electrică",
@@ -257,6 +290,7 @@
     "eyebrow": "Înainte să pornești",
     "title": "Tot ce îți trebuie pentru un sejur liniștit",
     "intro": "Locul este retras, iar ultima parte a drumului are nevoie de puțină coordonare. Scrie-ne înainte de sosire și te ghidăm pas cu pas.",
+    "mapAlt": "Harta de acces către Cioclovina Tribe în Munții Șureanu",
     "arrivalTitle": "Cum ajungi",
     "arrivalSteps": [
       "Caută «Cioclovina Tribe» în Google Maps sau Waze.",

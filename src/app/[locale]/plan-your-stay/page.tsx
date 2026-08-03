@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { CircleCheck } from "lucide-react";
+import { CircleCheck, MapPin, MessageCircle } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { InteriorHero } from "@/components/sections/interior-hero";
+import { StaticLocationMap } from "@/components/maps/static-location-map";
 import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/content/site-config";
 import type { Locale } from "@/i18n/routing";
@@ -43,6 +44,7 @@ export default async function GuidePage({ params }: PageProps) {
           {blocks.map(([title, items]) => (
             <article
               className="rounded-3xl border border-forest/10 bg-white p-7 shadow-[0_14px_40px_rgba(24,54,43,.06)] md:p-9"
+              id={title === "arrivalTitle" ? "getting-here" : undefined}
               key={title}
             >
               <h2 className="font-serif text-3xl font-semibold">{t(title)}</h2>
@@ -54,6 +56,23 @@ export default async function GuidePage({ params }: PageProps) {
                   </li>
                 ))}
               </ul>
+              {title === "arrivalTitle" ? (
+                <>
+                  <StaticLocationMap
+                    alt={t("mapAlt")}
+                    className="mt-7 rounded-2xl border border-forest/10"
+                  />
+                  <a
+                    className={`${buttonVariants({ variant: "outline" })} mt-5`}
+                    href={siteConfig.maps}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <MapPin aria-hidden className="size-4" />
+                    {common("cta.openMaps")}
+                  </a>
+                </>
+              ) : null}
             </article>
           ))}
         </div>
@@ -66,15 +85,8 @@ export default async function GuidePage({ params }: PageProps) {
               rel="noreferrer"
               target="_blank"
             >
+              <MessageCircle aria-hidden className="size-4" />
               {common("cta.availability")}
-            </a>
-            <a
-              className={buttonVariants({ variant: "outline" })}
-              href={siteConfig.maps}
-              rel="noreferrer"
-              target="_blank"
-            >
-              {common("cta.openMaps")}
             </a>
           </div>
         </div>

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import { Check, ChevronLeft } from "lucide-react";
+import { Check, ChevronLeft, MessageCircle } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
 import { StayCard } from "@/components/stays/stay-card";
 import { buttonVariants } from "@/components/ui/button";
+import { PhotoGallery } from "@/components/gallery/photo-gallery";
 import { JsonLd } from "@/components/seo/json-ld";
 import { accommodations } from "@/content/accommodations";
 import { siteConfig, siteUrl } from "@/content/site-config";
@@ -116,22 +116,14 @@ export default async function StayDetailPage({ params }: PageProps) {
       </section>
 
       <section className="bg-cream py-5 md:py-8">
-        <div className="site-container grid gap-4 md:grid-cols-2">
-          {stay.gallery.map((image, index) => (
-            <div
-              className={`relative overflow-hidden rounded-2xl ${index === 0 ? "aspect-[16/10] md:col-span-2" : "aspect-[4/3]"}`}
-              key={image}
-            >
-              <Image
-                alt={index === 0 ? name : ""}
-                className="object-cover"
-                fill
-                priority={index === 0}
-                sizes={index === 0 ? "100vw" : "(max-width: 768px) 100vw, 50vw"}
-                src={image}
-              />
-            </div>
-          ))}
+        <div className="site-container">
+          <PhotoGallery
+            images={stay.gallery.map((image, index) => ({
+              src: image,
+              alt:
+                index === 0 ? name : t("detail.galleryImageAlt", { stay: name, index: index + 1 }),
+            }))}
+          />
         </div>
       </section>
 
@@ -169,6 +161,7 @@ export default async function StayDetailPage({ params }: PageProps) {
               rel="noreferrer"
               target="_blank"
             >
+              <MessageCircle aria-hidden className="size-4" />
               {common("cta.availability")}
             </a>
             <a

@@ -58,3 +58,6 @@
 - [x] Ajouter le CTA Booking.com localisé sur l'accueil, les pages Hébergements, les fiches, la page Contact et le footer.
 - [x] Améliorer l'UI globale : contrastes et espacements des boutons, rythme des sections, cartes, footer, header dynamique au scroll et cohérence des CTA.
 - [x] Aligner la typographie du site sur le PDF avec Inter Regular, Bold, Italic et Bold Italic, servies localement.
+- [x] Ajouter les drapeaux au sélecteur de langue, adoucir les hovers des boutons et identifier les CTA WhatsApp avec une icône de discussion.
+- [x] Enrichir le footer, restructurer les équipements communs et leur CTA, compléter les traductions Expériences, ajouter Google Maps à « Comment venir » et créer une galerie photo réutilisable.
+- [x] Intégrer une carte statique MapTiler réutilisable sur l'accueil et dans « Comment venir », avec clé publique chargée depuis l'environnement.
