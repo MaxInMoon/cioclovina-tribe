@@ -11,6 +11,7 @@ import "@fontsource/inter/latin-ext-400.css";
 import "@fontsource/inter/latin-ext-400-italic.css";
 import "@fontsource/inter/latin-ext-700.css";
 import "@fontsource/inter/latin-ext-700-italic.css";
+import "@maptiler/sdk/dist/maptiler-sdk.css";
 
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
